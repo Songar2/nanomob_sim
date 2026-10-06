@@ -1,0 +1,76 @@
+# E5b 보조: 턱 통과 속도 스윕(3·5 cm) — 이 차체로 넘을 수 있는 최소 속도와 충격
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 2
+output: results/E5_curb_speed.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  v60:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    h_pass: 0.06
+    curb_speed: 0.6
+    label: C1 통과속도 0.6 m/s
+  v80:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    h_pass: 0.06
+    curb_speed: 0.8
+    label: C1 통과속도 0.8 m/s
+  v100:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    h_pass: 0.06
+    curb_speed: 1.0
+    label: C1 통과속도 1.0 m/s
+  v120:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    h_pass: 0.06
+    curb_speed: 1.2
+    label: C1 통과속도 1.2 m/s
+  v140:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    h_pass: 0.06
+    curb_speed: 1.4
+    label: C1 통과속도 1.4 m/s
+event:
+  type: curb
+  title: E5 턱(C1)
+  start_y: 24.0
+  curb_y: 32.0
+  timeout: 25.0
+  variants:
+  - name: h3
+    lane_x: 114.0
+    curb_h: 0.03
+    cam_pos:
+    - 119.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 114.0
+    - 32.5
+    - 0.2
+  - name: h5
+    lane_x: 119.0
+    curb_h: 0.05
+    cam_pos:
+    - 124.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 119.0
+    - 32.5
+    - 0.2

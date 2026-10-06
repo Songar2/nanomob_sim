@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <!-- 차고지 담장 한 구간: 길이 12 m × 두께 0.15 m × 높이 2.0 m (시각 전용, 깊이 카메라 시야 가림) -->
+  <model name="fence">
+    <link name="seg">
+      <gravity>false</gravity>
+      <inertial><mass>1000</mass><inertia><ixx>1e3</ixx><iyy>1e3</iyy><izz>1e3</izz></inertia></inertial>
+      <visual name="wall"><pose>0 0 1.0 0 0 0</pose><geometry><box><size>12 0.15 2.0</size></box></geometry>
+        <material><ambient>0.55 0.55 0.58 1</ambient><diffuse>0.55 0.55 0.58 1</diffuse></material></visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <!-- 4.5 m × 1.8 m × 1.5 m 승용차. 모델 원점 = 바닥 중심, +x = 전방(후진 시 -x 방향으로 이동). 충돌 지오메트리 없음 -->
+  <model name="car1">
+    <link name="body">
+      <gravity>false</gravity>
+      <inertial><mass>1500</mass><inertia><ixx>1e3</ixx><iyy>2e3</iyy><izz>2e3</izz></inertia></inertial>
+      <visual name="lower"><pose>0 0 0.65 0 0 0</pose><geometry><box><size>4.5 1.8 0.7</size></box></geometry>
+        <material><ambient>0.7 0.1 0.1 1</ambient><diffuse>0.7 0.1 0.1 1</diffuse></material></visual>
+      <visual name="cabin"><pose>-0.2 0 1.2 0 0 0</pose><geometry><box><size>2.6 1.6 0.55</size></box></geometry>
+        <material><ambient>0.15 0.2 0.25 1</ambient><diffuse>0.15 0.2 0.25 1</diffuse></material></visual>
+      <visual name="taillight_l"><pose>-2.26 0.65 0.8 0 0 0</pose><geometry><box><size>0.04 0.35 0.15</size></box></geometry>
+        <material><ambient>1 0.1 0.1 1</ambient><diffuse>1 0.1 0.1 1</diffuse><emissive>1 0.1 0.1 1</emissive></material></visual>
+      <visual name="taillight_r"><pose>-2.26 -0.65 0.8 0 0 0</pose><geometry><box><size>0.04 0.35 0.15</size></box></geometry>
+        <material><ambient>1 0.1 0.1 1</ambient><diffuse>1 0.1 0.1 1</diffuse><emissive>1 0.1 0.1 1</emissive></material></visual>
+      <visual name="reverse_lamp"><pose>-2.26 0 0.8 0 0 0</pose><geometry><box><size>0.04 0.3 0.12</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><emissive>1 1 1 1</emissive></material></visual>
+      <visual name="headlight_l"><pose>2.26 0.65 0.8 0 0 0</pose><geometry><box><size>0.04 0.3 0.12</size></box></geometry>
+        <material><ambient>1 1 0.7 1</ambient><diffuse>1 1 0.7 1</diffuse></material></visual>
+      <visual name="headlight_r"><pose>2.26 -0.65 0.8 0 0 0</pose><geometry><box><size>0.04 0.3 0.12</size></box></geometry>
+        <material><ambient>1 1 0.7 1</ambient><diffuse>1 1 0.7 1</diffuse></material></visual>
+      <visual name="wheel_fl"><pose>1.4 0.85 0.32 1.5708 0 0</pose><geometry><cylinder><radius>0.32</radius><length>0.22</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="wheel_fr"><pose>1.4 -0.85 0.32 1.5708 0 0</pose><geometry><cylinder><radius>0.32</radius><length>0.22</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="wheel_rl"><pose>-1.4 0.85 0.32 1.5708 0 0</pose><geometry><cylinder><radius>0.32</radius><length>0.22</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="wheel_rr"><pose>-1.4 -0.85 0.32 1.5708 0 0</pose><geometry><cylinder><radius>0.32</radius><length>0.22</length></cylinder></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+    </link>
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+      <topic>/model/car1/cmd_vel</topic>
+    </plugin>
+  </model>
+</sdf>

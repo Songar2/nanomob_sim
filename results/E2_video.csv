@@ -1,0 +1,4 @@
+event,profile,delay,decel,d_app,v_ped,v_robot,seed,result,collision,min_clear,stop_dist,t_stop,peak_decel,v_emerge,emerged,v_impact,v_min
+doorway,system,0.2,1.5,3.0,1.2,1.67,1000,passed,0,0.441,,,1.684,1.67,1,,0.33
+doorway,human,1.0,1.5,3.0,1.2,1.67,1000,stopped,0,0.097,3.18,2.568,1.684,1.67,1,,0.029
+doorway,system_preslow,0.2,1.5,3.0,1.2,0.8,1000,passed,0,0.857,,,0.0,0.8,1,,0.8

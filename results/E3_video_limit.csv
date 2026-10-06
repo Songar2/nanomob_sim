@@ -1,0 +1,2 @@
+event,profile,delay,decel,d_app,v_ped,v_robot,seed,result,collision,min_clear,stop_dist,t_stop,peak_decel,v_emerge,emerged,v_impact,v_min
+car_reverse,system,0.2,1.5,1.0,2.0,1.67,1000,collision,1,-0.014,,,0.0,1.67,1,1.67,1.67

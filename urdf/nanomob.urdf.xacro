@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!-- 시니어 nano-mobility 구조 보완안 v3 기반 단순화 모델
+     6바퀴: 중앙 좌우 독립 구동륜(r=0.18) + 전후 캐스터 4개(마찰 0 구체로 단순화)
+     차체 폭 0.90 m (법규 1 m 이하), 길이 1.10 m, 기기 60 kg + 탑승자 70 kg
+     전방 Depth 카메라: 차체 고정 전방 좌측 코너, 지상 0.45 m / 후방 라이다: 고정 후면 섀시 -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="nanomob">
+  <xacro:property name="L" value="1.10"/>
+  <xacro:property name="W" value="0.90"/>
+  <xacro:property name="H" value="0.30"/>
+  <xacro:property name="wheel_r" value="0.18"/>
+  <xacro:property name="wheel_w" value="0.08"/>
+  <xacro:property name="wheel_y" value="0.42"/>
+  <xacro:property name="wheel_z" value="-0.07"/>   <!-- base_link 원점은 지상 0.25 m -->
+  <xacro:arg name="caster_r" default="0.09"/>
+  <!-- 센서 장착 위치(E6 센서 배치 시험용 인자). z 는 base_link 기준(지상고 = z + 0.25), cam_pitch 는 아래로 + [rad] -->
+  <xacro:arg name="cam_x" default="0.56"/><xacro:arg name="cam_y" default="0.40"/><xacro:arg name="cam_z" default="0.20"/><xacro:arg name="cam_pitch" default="0.0"/>
+  <xacro:arg name="lidar_x" default="-0.56"/><xacro:arg name="lidar_y" default="0.0"/><xacro:arg name="lidar_z" default="0.20"/>   <!-- 캐스터 반지름: 턱 넘기 비교(E5c)용 인자 -->
+  <xacro:property name="caster_r" value="$(arg caster_r)"/>
+  <xacro:property name="caster_z" value="${caster_r - 0.25}"/>   <!-- 지면 접촉 유지: base_link 원점이 지상 0.25 m -->
+
+  <xacro:macro name="box_inertia" params="m x y z">
+    <inertia ixx="${m*(y*y+z*z)/12}" iyy="${m*(x*x+z*z)/12}" izz="${m*(x*x+y*y)/12}" ixy="0" ixz="0" iyz="0"/>
+  </xacro:macro>
+
+  <link name="base_link">
+    <inertial><mass value="60"/><origin xyz="0 0 0"/><xacro:box_inertia m="60" x="${L}" y="${W}" z="${H}"/></inertial>
+    <visual><geometry><box size="${L} ${W} ${H}"/></geometry><material name="ivory"><color rgba="0.93 0.92 0.88 1"/></material></visual>
+    <collision><geometry><box size="${L} ${W} ${H}"/></geometry></collision>
+  </link>
+
+  <!-- 좌석 + 탑승자 (집중질량) -->
+  <link name="seat_link">
+    <inertial><mass value="70"/><origin xyz="0 0 0.3"/><xacro:box_inertia m="70" x="0.5" y="0.5" z="0.9"/></inertial>
+    <visual><origin xyz="0 0 0.25"/><geometry><box size="0.55 0.55 0.5"/></geometry><material name="gray"><color rgba="0.55 0.55 0.57 1"/></material></visual>
+    <visual><origin xyz="-0.25 0 0.75"/><geometry><box size="0.08 0.5 0.6"/></geometry><material name="gray"/></visual>
+    <collision><origin xyz="0 0 0.25"/><geometry><box size="0.55 0.55 0.5"/></geometry></collision>
+  </link>
+  <joint name="seat_joint" type="fixed"><parent link="base_link"/><child link="seat_link"/><origin xyz="-0.05 0 ${H/2}"/></joint>
+
+  <!-- 구동륜 -->
+  <xacro:macro name="drive_wheel" params="name y">
+    <link name="${name}_wheel">
+      <inertial><mass value="3"/><inertia ixx="0.03" iyy="0.03" izz="0.05" ixy="0" ixz="0" iyz="0"/></inertial>
+      <visual><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${wheel_r}" length="${wheel_w}"/></geometry><material name="black"><color rgba="0.1 0.1 0.1 1"/></material></visual>
+      <collision><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${wheel_r}" length="${wheel_w}"/></geometry></collision>
+    </link>
+    <joint name="${name}_wheel_joint" type="continuous">
+      <parent link="base_link"/><child link="${name}_wheel"/><origin xyz="0 ${y} ${wheel_z}"/><axis xyz="0 1 0"/>
+    </joint>
+    <gazebo reference="${name}_wheel"><mu1>1.0</mu1><mu2>1.0</mu2></gazebo>
+  </xacro:macro>
+  <xacro:drive_wheel name="left" y="${wheel_y}"/>
+  <xacro:drive_wheel name="right" y="${-wheel_y}"/>
+
+  <!-- 캐스터 (마찰 0 구체) -->
+  <xacro:macro name="caster" params="name x y">
+    <link name="${name}_caster">
+      <inertial><mass value="0.8"/><inertia ixx="0.003" iyy="0.003" izz="0.003" ixy="0" ixz="0" iyz="0"/></inertial>
+      <visual><geometry><sphere radius="${caster_r}"/></geometry><material name="black"/></visual>
+      <collision><geometry><sphere radius="${caster_r}"/></geometry></collision>
+    </link>
+    <joint name="${name}_caster_joint" type="fixed"><parent link="base_link"/><child link="${name}_caster"/><origin xyz="${x} ${y} ${caster_z}"/></joint>
+    <gazebo reference="${name}_caster"><mu1>0.0</mu1><mu2>0.0</mu2></gazebo>
+  </xacro:macro>
+  <xacro:caster name="fl" x="0.45" y="0.32"/>
+  <xacro:caster name="fr" x="0.45" y="-0.32"/>
+  <xacro:caster name="rl" x="-0.45" y="0.32"/>
+  <xacro:caster name="rr" x="-0.45" y="-0.32"/>
+
+  <!-- 전방 Depth 카메라 (차체 고정, 전방 좌측 코너, 지상 0.45 m) -->
+  <link name="depth_camera_link">
+    <inertial><mass value="0.1"/><inertia ixx="1e-4" iyy="1e-4" izz="1e-4" ixy="0" ixz="0" iyz="0"/></inertial>
+    <visual><geometry><box size="0.03 0.10 0.03"/></geometry><material name="teal"><color rgba="0.1 0.6 0.6 1"/></material></visual>
+  </link>
+  <joint name="depth_camera_joint" type="fixed"><parent link="base_link"/><child link="depth_camera_link"/><origin xyz="$(arg cam_x) $(arg cam_y) $(arg cam_z)" rpy="0 $(arg cam_pitch) 0"/></joint>
+
+  <!-- 후방 라이다 (고정 후면 섀시) -->
+  <link name="rear_lidar_link">
+    <inertial><mass value="0.2"/><inertia ixx="1e-4" iyy="1e-4" izz="1e-4" ixy="0" ixz="0" iyz="0"/></inertial>
+    <visual><geometry><cylinder radius="0.04" length="0.04"/></geometry><material name="black"/></visual>
+  </link>
+  <joint name="rear_lidar_joint" type="fixed"><parent link="base_link"/><child link="rear_lidar_link"/><origin xyz="$(arg lidar_x) $(arg lidar_y) $(arg lidar_z)" rpy="0 0 ${pi}"/></joint>
+
+  <gazebo reference="depth_camera_link">
+    <sensor name="depth_camera" type="depth_camera">
+      <update_rate>15</update_rate>
+      <topic>depth</topic>
+      <gz_frame_id>depth_camera_link</gz_frame_id>
+      <camera>
+        <horizontal_fov>1.518</horizontal_fov>   <!-- 87°, RealSense D435급 -->
+        <image><width>160</width><height>120</height><format>R_FLOAT32</format></image>
+        <clip><near>0.3</near><far>6.0</far></clip>
+        <noise><type>gaussian</type><mean>0</mean><stddev>0.01</stddev></noise>
+      </camera>
+      <always_on>1</always_on><visualize>true</visualize>
+    </sensor>
+  </gazebo>
+  <!-- IMU (차체 중심): C3 경사 감지, 턱 충격 측정 -->
+  <gazebo reference="base_link">
+    <sensor name="imu" type="imu">
+      <update_rate>100</update_rate>
+      <topic>imu</topic>
+      <always_on>1</always_on>
+    </sensor>
+  </gazebo>
+  <gazebo reference="rear_lidar_link">
+    <sensor name="rear_lidar" type="gpu_lidar">
+      <update_rate>10</update_rate>
+      <topic>scan_rear</topic>
+      <gz_frame_id>rear_lidar_link</gz_frame_id>
+      <lidar>
+        <scan><horizontal><samples>181</samples><resolution>1</resolution><min_angle>-1.5708</min_angle><max_angle>1.5708</max_angle></horizontal></scan>
+        <range><min>0.1</min><max>12.0</max><resolution>0.01</resolution></range>
+        <noise><type>gaussian</type><mean>0</mean><stddev>0.01</stddev></noise>
+      </lidar>
+      <always_on>1</always_on><visualize>false</visualize>
+    </sensor>
+  </gazebo>
+
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>${2*wheel_y}</wheel_separation>
+      <wheel_radius>${wheel_r}</wheel_radius>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <tf_topic>tf_gz</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <max_linear_velocity>2.0</max_linear_velocity>
+      <min_linear_velocity>-0.5</min_linear_velocity>
+      <max_angular_velocity>1.5</max_angular_velocity>
+    </plugin>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher"><topic>joint_states</topic></plugin>
+  </gazebo>
+</robot>

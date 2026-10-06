@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>nanomob_sim</name>
+  <version>0.1.0</version>
+  <description>시니어 nano-mobility 돌발상황 시뮬레이션 (서울시립대 정문~미래관 타일, Gazebo Harmonic)</description>
+  <maintainer email="wsangar2b@gmail.com">engineape</maintainer>
+  <license>MIT</license>
+  <depend>rclpy</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_interfaces</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>sensor_msgs</depend>
+  <depend>sensor_msgs_py</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_msgs</depend>
+  <depend>std_msgs</depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

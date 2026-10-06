@@ -1,0 +1,57 @@
+# E2(A1) 영상용: 출현 3 m, 보행자 1.2 m/s, 프로파일 3종
+# 구역 A: 건물 동쪽 면 x=0, 출입구 y=25 (가상 시가지)
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 1
+output: results/E2_video.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  system:
+    delay: 0.2
+    decel: 1.5
+    label: 자율 급정거 (지연 0.2 s)
+  human:
+    delay: 1.0
+    decel: 1.5
+    label: 사람 조작 (지연 1.0 s)
+  system_preslow:
+    delay: 0.2
+    decel: 1.5
+    speed: 0.8
+    label: 자율 급정거 + 출입구 사전감속 (0.8 m/s)
+event:
+  type: doorway
+  facade_p0:
+  - 0.0
+  - 0.0
+  facade_p1:
+  - 0.0
+  - 40.0
+  door_s: 25.0
+  door_jitter: 0.0
+  path_offset: 1.5
+  start_s: 9.0
+  hide_depth: 1.0
+  cross_width: 3.0
+  ped_radius: 0.22
+  appearance_distances:
+  - 3.0
+  ped_speeds:
+  - 1.2
+  timeout: 40.0
+  title: E2 출입구 보행자 출현
+  cam_pos:
+  - 7.5
+  - 19.5
+  - 4.5
+  cam_look:
+  - 0.0
+  - 25.0
+  - 0.5
+record: true
+video_dir: results/videos

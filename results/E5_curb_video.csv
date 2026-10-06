@@ -1,0 +1,5 @@
+event,variant,curb_h,profile,delay,v_robot,seed,result,v_contact,max_pitch_deg,max_roll_deg,az_peak,ax_peak,stop_gap
+curb,h3,0.03,none,0.2,1.67,1000,crossed,1.67,4.33,0.01,9.79,22.43,
+curb,h3,0.03,system,0.2,1.67,1000,crossed,1.0,4.08,0.54,23.86,25.9,
+curb,h5,0.05,none,0.2,1.67,1000,stuck,1.67,4.76,0.01,27.12,8.33,
+curb,h5,0.05,system,0.2,1.67,1000,stopped,,0.0,0.0,0.01,1.98,0.295

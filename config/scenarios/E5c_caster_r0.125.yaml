@@ -1,0 +1,88 @@
+# E5c 캐스터 반지름 0.125 m (sim.launch.py caster_r:=0.125)
+# 프로파일: 안전 제어 끔(enabled false) + 지정 속도로 직진 → 그 속도로 턱에 닿았을 때 넘는지(순수 기구 성능)
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 2
+output: results/E5c_caster_r0.125.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  v40:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    speed: 0.4
+    label: 접근 0.4 m/s (제어 개입 없음)
+  v70:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    speed: 0.7
+    label: 접근 0.7 m/s (제어 개입 없음)
+  v100:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    speed: 1.0
+    label: 접근 1.0 m/s (제어 개입 없음)
+  v167:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    speed: 1.67
+    label: 접근 1.67 m/s (제어 개입 없음)
+event:
+  type: curb
+  title: E5 턱(C1)
+  start_y: 24.0
+  curb_y: 32.0
+  timeout: 25.0
+  variants:
+  - name: h3
+    lane_x: 114.0
+    curb_h: 0.03
+    cam_pos:
+    - 119.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 114.0
+    - 32.5
+    - 0.2
+  - name: h5
+    lane_x: 119.0
+    curb_h: 0.05
+    cam_pos:
+    - 124.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 119.0
+    - 32.5
+    - 0.2
+  - name: h8
+    lane_x: 124.0
+    curb_h: 0.08
+    cam_pos:
+    - 129.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 124.0
+    - 32.5
+    - 0.2
+  - name: h12
+    lane_x: 129.0
+    curb_h: 0.12
+    cam_pos:
+    - 134.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 129.0
+    - 32.5
+    - 0.2

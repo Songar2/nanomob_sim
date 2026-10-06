@@ -1,0 +1,38 @@
+# E5c 영상: 캐스터 반지름 0.09 m, 턱 5 cm, 1.0 m/s
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 1
+output: results/E5c_video_r0.09.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  v100:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    speed: 1.0
+    label: 접근 1.0 m/s (제어 개입 없음)
+event:
+  type: curb
+  title: E5c 캐스터 지름 18 cm
+  start_y: 24.0
+  curb_y: 32.0
+  timeout: 25.0
+  variants:
+  - name: h5
+    lane_x: 119.0
+    curb_h: 0.05
+    cam_pos:
+    - 124.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 119.0
+    - 32.5
+    - 0.2
+record: true
+video_dir: results/videos
