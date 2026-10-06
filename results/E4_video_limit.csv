@@ -1,0 +1,2 @@
+event,profile,delay,decel,d_app,v_ped,v_robot,seed,result,collision,min_clear,stop_dist,t_stop,peak_decel,v_emerge,emerged,v_impact,v_min,robot_l,shift,v_pass,d_det,gap_pass
+rear_approach,system,0.2,1.5,6.0,7.0,1.67,1000,collision,1,-0.001,,,1.684,1.67,1,1.0,1.0,1.5,,,3.949,

@@ -1,0 +1,54 @@
+# 구역 C: 보행로 y=-60, 북쪽 주차장 (가상 시가지)
+world: nanomob_town
+robot_name: nanomob
+seed: 1
+repeats: 1
+output: results/E3_video.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  system:
+    delay: 0.2
+    decel: 1.5
+    label: 자율 급정거 (지연 0.2 s)
+  human:
+    delay: 1.0
+    decel: 1.5
+    label: 사람 조작 (지연 1.0 s)
+event:
+  type: car_reverse
+  title: E3 주차장 후진
+  veh_name: 후진 차량
+  vehicle: car1
+  reverse: true
+  veh_length: 4.5
+  veh_width: 1.8
+  road_p0:
+  - 100.0
+  - -60.0
+  road_p1:
+  - 140.0
+  - -60.0
+  robot_l: 0.0
+  fence_gap: 1.9
+  fence_opening: 3.0
+  occluders:
+  - row_a
+  - row_b
+  occluder_depth: 4.5
+  cross_s: 12.0
+  start_s: -2.0
+  hide_depth: 0.6
+  appearance_distances:
+  - 3.0
+  ped_speeds:
+  - 2.0
+  timeout: 40.0
+  cam_ds: -3.0
+  cam_dl: 7.0
+  cam_h: 4.5
+  rec_from_s: 3.5
+record: true
+video_dir: results/videos

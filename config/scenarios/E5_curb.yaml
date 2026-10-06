@@ -1,0 +1,81 @@
+# E5b / C1: 보도 턱·문턱(단차) — 높이 3/5/8/12 cm. 넘을 수 있는 높이(≤3.5 cm, E5_curb_speed 스윕으로 정함)면 1.0 m/s 로 통과, 아니면 턱 앞 정지(우회 필요).
+# 기기: 구동륜 r=0.18 m, 캐스터 구체 r=0.09 m(마찰 0), 차체 바닥 지상고 0.10 m. 레인은 scripts/e5_lanes.py.
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 2
+output: results/E5_curb.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  none:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    label: 무반응(기준)
+  system_noC1:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: false
+    label: 시스템, 턱 인식 없음
+  system:
+    delay: 0.2
+    decel: 1.5
+    curb_comp: true
+    label: 시스템 + C1 턱 인식(≤3.5 cm 1.0 m/s 통과)
+    h_pass: 0.035
+    curb_speed: 1.0
+event:
+  type: curb
+  title: E5 턱(C1)
+  start_y: 24.0
+  curb_y: 32.0
+  timeout: 25.0
+  variants:
+  - name: h3
+    lane_x: 114.0
+    curb_h: 0.03
+    cam_pos:
+    - 119.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 114.0
+    - 32.5
+    - 0.2
+  - name: h5
+    lane_x: 119.0
+    curb_h: 0.05
+    cam_pos:
+    - 124.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 119.0
+    - 32.5
+    - 0.2
+  - name: h8
+    lane_x: 124.0
+    curb_h: 0.08
+    cam_pos:
+    - 129.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 124.0
+    - 32.5
+    - 0.2
+  - name: h12
+    lane_x: 129.0
+    curb_h: 0.12
+    cam_pos:
+    - 134.0
+    - 29.0
+    - 2.2
+    cam_look:
+    - 129.0
+    - 32.5
+    - 0.2

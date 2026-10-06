@@ -1,0 +1,48 @@
+world: nanomob_town
+robot_name: nanomob
+seed: 1
+repeats: 1
+output: results/sensor/L3_rear.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  system:
+    delay: 0.2
+    decel: 1.5
+    label: 후방 감지 시스템 (지연 0.2 s)
+event:
+  type: rear_approach
+  title: E4 뒤차 접근
+  veh_length: 4.5
+  veh_width: 1.8
+  road_p0:
+  - 200.0
+  - 0.0
+  road_p1:
+  - 200.0
+  - 100.0
+  edge_l: 3.0
+  edge_buffer: 0.15
+  car_l: 0.1
+  robot_l_list:
+  - 1.0
+  start_s: 5.5
+  trigger_s: 10.0
+  appearance_distances:
+  - 6.0
+  - 10.0
+  ped_speeds:
+  - 5.0
+  - 7.0
+  timeout: 40.0
+  k_yaw: 2.5
+  k_lat: 1.6
+  cam_s: 14.0
+  cam_l: -5.0
+  cam_ds: -9.0
+  cam_h: 4.5
+controller_params:
+  rear_lidar_x: -0.4
+  rear_lidar_y: 0.0

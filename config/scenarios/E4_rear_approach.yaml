@@ -1,0 +1,59 @@
+# E4 / B4: 보도 없는 이면도로의 길 가장자리를 주행 중 뒤에서 차가 같은 방향으로 접근해 앞질러 감
+# 구역 D: 이면도로 중심 x=200, 폭 6 m, 보도 없음 (가상 시가지)
+world: nanomob_town
+robot_name: nanomob
+seed: 1
+repeats: 1
+output: results/E4_rear_approach.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  none:
+    delay: 0.2
+    decel: 1.5
+    enabled: false
+    label: 무반응(기준)
+  system:
+    delay: 0.2
+    decel: 1.5
+    label: 후방 감지 시스템 (지연 0.2 s)
+  human:
+    delay: 1.0
+    decel: 1.5
+    label: 사람 조작 (지연 1.0 s)
+event:
+  type: rear_approach
+  title: E4 뒤차 접근
+  veh_length: 4.5
+  veh_width: 1.8
+  road_p0:
+  - 200.0
+  - 0.0
+  road_p1:
+  - 200.0
+  - 100.0
+  edge_l: 3.0
+  edge_buffer: 0.15
+  car_l: 0.1
+  robot_l_list:
+  - 1.5
+  - 1.9
+  start_s: 5.5
+  trigger_s: 10.0
+  appearance_distances:
+  - 6.0
+  - 10.0
+  - 25.0
+  ped_speeds:
+  - 3.0
+  - 5.0
+  - 7.0
+  timeout: 40.0
+  k_yaw: 2.5
+  k_lat: 1.6
+  cam_s: 14.0
+  cam_l: -5.0
+  cam_ds: -9.0
+  cam_h: 4.5

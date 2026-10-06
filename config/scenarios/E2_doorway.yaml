@@ -1,0 +1,49 @@
+# 구역 A: 건물 동쪽 면 x=0, 출입구 y=25 (가상 시가지)
+world: nanomob_town
+robot_name: nanomob
+ped_name: ped1
+seed: 1
+repeats: 2
+output: results/E2_doorway.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  system:
+    delay: 0.2
+    decel: 1.5
+  human:
+    delay: 1.0
+    decel: 1.5
+  system_preslow:
+    delay: 0.2
+    decel: 1.5
+    speed: 0.8
+event:
+  type: doorway
+  facade_p0:
+  - 0.0
+  - 0.0
+  facade_p1:
+  - 0.0
+  - 40.0
+  door_s: 25.0
+  door_jitter: 0.0
+  path_offset: 1.5
+  start_s: 9.0
+  hide_depth: 1.0
+  cross_width: 3.0
+  ped_radius: 0.22
+  appearance_distances:
+  - 1.0
+  - 1.5
+  - 2.0
+  - 3.0
+  - 4.0
+  - 5.0
+  ped_speeds:
+  - 0.8
+  - 1.2
+  - 1.6
+  timeout: 40.0

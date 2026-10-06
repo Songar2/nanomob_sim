@@ -1,0 +1,3 @@
+event,profile,delay,decel,d_app,v_ped,v_robot,seed,result,collision,min_clear,stop_dist,t_stop,peak_decel,v_emerge,emerged,v_impact,v_min
+bus_exit,system,0.2,1.5,4.0,3.0,1.67,1000,yield_pass,0,0.373,3.594,2.708,1.684,1.67,1,,0.0
+bus_exit,human,1.0,1.5,4.0,3.0,1.67,1000,collision,1,-0.004,,,1.366,1.67,1,0.541,0.541

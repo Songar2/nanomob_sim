@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <!-- 주차 차량 줄: 길이 12 m(u 방향) × 깊이 4.5 m × 높이 1.5 m. 러너가 근접면(깊이 +쪽)을 fence_l 에 맞춰 놓는다. 시각 전용 -->
+  <model name="parked_row">
+    <link name="seg">
+      <gravity>false</gravity>
+      <inertial><mass>1000</mass><inertia><ixx>1e3</ixx><iyy>1e3</iyy><izz>1e3</izz></inertia></inertial>
+      <visual name="cars"><pose>0 0 0.75 0 0 0</pose><geometry><box><size>12 4.5 1.5</size></box></geometry>
+        <material><ambient>0.35 0.4 0.55 1</ambient><diffuse>0.35 0.4 0.55 1</diffuse></material></visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,47 @@
+# E1 / B1: 버스 차고지 출구에서 버스가 담장 틈으로 진출해 길가(진로)를 가로지름
+# 구역 B: 도로 중심 x=60, 서쪽 차고지 (가상 시가지)
+world: nanomob_town
+robot_name: nanomob
+seed: 1
+repeats: 2
+output: results/E1_bus_exit.csv
+robot:
+  length: 1.1
+  width: 0.9
+  speed: 1.67
+profiles:
+  system:
+    delay: 0.2
+    decel: 1.5
+    label: 자율 급정거 (지연 0.2 s)
+  human:
+    delay: 1.0
+    decel: 1.5
+    label: 사람 조작 (지연 1.0 s)
+event:
+  type: bus_exit
+  road_p0:
+  - 60.0
+  - 0.0
+  road_p1:
+  - 60.0
+  - 40.0
+  robot_l: -3.5
+  fence_gap: 1.8
+  fence_opening: 7.0
+  cross_s: 20.0
+  start_s: 6.0
+  hide_depth: 1.0
+  bus_length: 11.0
+  bus_width: 2.5
+  appearance_distances:
+  - 1.0
+  - 2.0
+  - 3.0
+  - 4.0
+  - 6.0
+  ped_speeds:
+  - 1.5
+  - 3.0
+  - 5.0
+  timeout: 40.0
