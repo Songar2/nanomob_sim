@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>전동휠체어_6주차 · 시니어 나노모빌리티</title>
+<title>다우테크놀로지 기업 발표 · 자율 안전 이동 플랫폼</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
 *{margin:0;box-sizing:border-box}html,body{height:100%;background:#0f1319;overflow:hidden;font-family:'Noto Sans KR',Arial,sans-serif}
@@ -16,358 +16,29 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
 #help{position:fixed;left:18px;bottom:14px;color:#9aa4b2;font-size:13px;opacity:.7}
 </style></head><body>
 <div id="stage">
-<section id="cover" style="background:#1d2630;color:#ffffff;font-family:'Noto Sans KR', Arial, sans-serif;padding:96px 100px;display:flex;flex-direction:column;justify-content:space-between">
+<section id="cover" data-transition="fade" style="display:flex; flex-direction:column; justify-content:space-between; padding:96px 100px; background:#1d2630">
   <div style="position:absolute; top:173px; left:1086px; width:734px; height:734px; background:#ffffff;border-radius:50%"></div>
-  <img src="media/cover_concept.png" alt="6바퀴 나노모빌리티 콘셉트 예시 이미지" style="position:absolute; top:287px; left:1153px; width:600px; height:507px; object-fit:contain">
-  <div style="display:flex;align-items:center;gap:16px">
-    <p style="font-size:26px;font-weight:700;color:#1d2630;background:#f2b600;padding:4px 18px;border-radius:20px">6주차</p>
-    <p style="font-size:26px;font-weight:400;color:#d5dbe1">2026-2 임베디드시스템응용설계</p>
+  <img src="media/cover_concept.png" alt="6바퀴 이동 플랫폼 콘셉트 예시 이미지" style="position:absolute; top:287px; left:1153px; width:600px; height:507px; object-fit:contain">
+  <div style="display:flex; flex-direction:row; gap:16px; align-items:center">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#f2b600">(주)다우테크놀로지</p>
   </div>
-  <div style="width:900px;display:flex;flex-direction:column;gap:28px">
-    <h1 style="font-size:104px;font-weight:700;line-height:1.2;color:#ffffff">시니어<br>나노모빌리티</h1>
-    <hr style="width:120px;border-top:6px solid #f2b600">
+  <div style="width:960px; display:flex; flex-direction:column; gap:24px">
+    <h1 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:104px; font-weight:700; line-height:1.2; color:#ffffff">자율 안전<br>이동 플랫폼</h1>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#d5dbe1">범용 이동체 플랫폼, 사람이 늦게 반응해도<br>기기가 먼저 멈출 수 있도록</p>
+    <div style="width:120px; height:6px; flex:0 0 auto; background:#f2b600"></div>
   </div>
-  <div style="display:flex;flex-direction:column;gap:8px">
-    <p style="font-size:30px;font-weight:700;color:#f2b600">(주)다우테크놀로지 × 부릉부릉</p>
-    <p style="font-size:28px;font-weight:400;color:#ffffff">팀장 박지원 | 강성우 · 백송현</p>
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:400; color:#ffffff">팀장 박지원 | 강성우 · 백송현</p>
   </div>
-  <aside>안녕하세요, 부릉부릉 팀입니다. 저희는 시니어가 가까운 거리를 안전하게 이동하도록 돕는 나노모빌리티를 기획했어요. 이번 발표는 가상 시가지 시뮬레이션으로 먼저 검증하는 1단계까지고, 그다음은 기업체와 미팅하면서 프로젝트를 구체화할 계획입니다.</aside>
+  <aside>안녕하세요. 저희는 사람이 늦게 반응해도 기기가 먼저 멈추는 이동체 플랫폼을 준비하고 있어요. 지난 미팅에서 말씀 주신 대로 특정 사용자용 제품이 아니라 누구나 타는 범용 플랫폼으로 방향을 잡았고, 오늘은 자율 안전 기능을 시뮬레이션 영상으로 짧게 보여드리겠습니다.</aside>
 </section>
-<section id="overview" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">개요</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">발표순서</h2>
-</div>
-<div style="display:flex;gap:32px;height:684px">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:36px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:700;color:#1D2630">01</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#1D2630">문제</h3>
-<p style="font-size:30px;color:#4A5560">사용 현황 · 니즈</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#3E5568">65세 이상 보행 사망 67.0%, 외출 불편 56.6%</p>
-<div style="flex:1"></div>
-<p style="font-size:30px;color:#4A5560">슬라이드 3</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:36px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:700;color:#1D2630">02</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#1D2630">범위</h3>
-<p style="font-size:30px;color:#4A5560">검증 순서 · 1단계</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#3E5568">가상 시가지에서 검증 후 기업체 미팅으로 구체화</p>
-<div style="flex:1"></div>
-<p style="font-size:30px;color:#4A5560">슬라이드 4</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:36px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:700;color:#1D2630">03</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#1D2630">솔루션</h3>
-<p style="font-size:30px;color:#4A5560">컨셉 · 시나리오</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#3E5568">기계가 먼저 멈추는 정지거리 1.3m (사람 2.6m)</p>
-<div style="flex:1"></div>
-<p style="font-size:30px;color:#4A5560">슬라이드 5~9</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:36px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:700;color:#1D2630">04</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#1D2630">구현</h3>
-<p style="font-size:30px;color:#4A5560">구성 · 제약 · 모터 실측</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#3E5568">6바퀴 구조, BLDC 전기 파라미터 실측</p>
-<div style="flex:1"></div>
-<p style="font-size:30px;color:#4A5560">슬라이드 10~14</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1D2630;padding:36px;border:2px solid #1D2630;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:700;color:#1D2630">05</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#FFFFFF">검증</h3>
-<p style="font-size:30px;color:#D5DBE1">차별점 · 검증 계획</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#F2B600">모터 제어 실습과 가상 시가지 시뮬레이션 결과</p>
-<div style="flex:1"></div>
-<p style="font-size:30px;color:#D5DBE1">슬라이드 15~30</p>
-</div>
-</div>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">2</p>
-<aside>발표는 다섯 파트예요. 먼저 어떤 문제를 풀려는지, 그다음 어디까지 할 건지 범위를 말씀드리고, 솔루션과 구현, 마지막에 검증 계획으로 마무리할게요.</aside>
-</section>
-<section id="problem" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:26px;font-weight:700;color:#3E5568">1. 문제 현황</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">시니어 보행 사고와 이동 불편</h2>
-</div>
-<div style="display:flex;flex-direction:column;gap:20px">
-<p style="font-size:31px;font-weight:700;color:#3E5568">문제 · 사고 현황</p>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">20.43%</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">서울 65세 이상 인구 비중 (2025)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">67.0%</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">보행 사망자 중 65세 이상 (2024, 920명 중 616명)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">56.2%</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">고령 보행 사망 중 횡단 중 발생</p>
-</div>
-</div>
-</div>
-<div style="display:flex;flex-direction:column;gap:20px">
-<p style="font-size:31px;font-weight:700;color:#3E5568">니즈 · 이동 공백</p>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">56.6%</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">65세 이상 외출 불편 (2023, 10,078명)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">약 15만</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">서울 70세 이상 면허 반납 누적 (2025년 한 해 32,095명)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">35.5%</p>
-<p style="font-size:29px;line-height:1.4;color:#4A5560">전동보장구 이용자 사고 경험 (2016 조사)</p>
-</div>
-</div>
-</div>
-<div style="display:flex;align-items:center;gap:24px;background:#1D2630;padding:24px 36px;border-radius:16px">
-<p style="font-size:26px;font-weight:700;color:#1D2630;background:#F2B600;padding:6px 20px;border-radius:24px">정리</p>
-<p style="font-size:32px;font-weight:700;color:#F2B600">시니어의 안전한 근거리 이동을 기기가 도울 수 있게 한다</p>
-</div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">행정안전부 2025 주민등록 · 한국교통안전공단 · 2023 노인실태조사 · 한국소비자원(2016)</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">3</p>
-<aside>처음엔 휠체어를 떠올렸는데, 알고 보니 문제는 탈것보다 타는 사람 쪽에 있었어요. 서울은 이미 초고령사회고, 보행 사망자 열 명 중 일곱 명 가까이가 65세 이상이에요. 그중 절반 넘게가 길을 건너다 사고를 당했고요. 게다가 시니어분들은 외출 자체가 불편하고, 면허를 반납하고 나면 걷기엔 멀고 대중교통 타기엔 애매한 거리를 채워 줄 수단이 없어요. 그래서 시니어가 가까운 거리를 안전하게 다닐 수 있도록 기기가 이동을 도울 수 있게 하는 방향으로 잡았습니다. 전동보장구 사고 조사는 2016년 자료라 최신 자료로 보완이 필요해요.</aside>
-</section>
-<section id="roadmap" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">2. 범위</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">진행 순서: 가상에서 검증하고, 기업체와 구체화</h2>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#1D2630;padding:40px;border:2px solid #1D2630;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">1</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#FFFFFF">1단계 · 가상 시가지 검증</h3>
-<p style="font-size:34px;font-weight:700;color:#F2B600">이번 발표 범위</p>
-<p style="font-size:34px;line-height:1.4;color:#D5DBE1">출입구 · 차고지 · 주차장 · 이면도로 · 경사와 턱을 일반 치수로 만든 가상 환경</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#FFFFFF">모터 제어 실습 + 시나리오 5종 시뮬레이션 (482회)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#F2F4F6;padding:40px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">2</p></div>
-<h3 style="font-size:48px;font-weight:700;color:#1D2630">2단계 · 기업체 미팅으로 구체화</h3>
-<p style="font-size:34px;font-weight:700;color:#3E5568">다음 단계</p>
-<p style="font-size:34px;line-height:1.4;color:#4A5560">시뮬레이션 결과를 공유하고 시료 사양 · 적용 가능 범위 · 기대 산출물을 확인</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#3E5568">실제 기기에 적용할 범위와 시험 방식을 기업체와 함께 정한다</p>
-</div>
-</div>
-<div style="display:flex;align-items:center;gap:24px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:30px;font-weight:700;color:#1D2630;background:#FFF4CC;border:2px solid #F2B600;padding:4px 20px;border-radius:24px">정리</p>
-<p style="font-size:34px;line-height:1.4;color:#1D2630">가상 시가지에서 먼저 검증하고, 그 결과를 바탕으로 기업체 미팅에서 프로젝트를 구체화</p>
-</div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">실제 기기 적용 범위와 시험 방식은 기업체와 협의 후 확정</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">4</p>
-<aside>범위는 두 단계로 잡았어요. 오늘 발표는 1단계, 가상 시가지에서 시뮬레이션으로 검증하는 부분까지입니다. 모터 제어 실습이랑, 시나리오 다섯 가지를 482회 돌린 결과를 보여드릴 거예요. 2단계는 아직 확정된 게 아니라, 이 결과를 가지고 기업체와 미팅해서 시료 사양이나 적용 범위, 어떤 산출물을 원하는지 확인하면서 프로젝트를 구체화하는 단계예요.</aside>
-</section>
-<section id="definition" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">3. 솔루션</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">시니어 나노모빌리티는 무엇인가</h2>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1D2630;padding:40px;border:2px solid #1D2630;border-radius:16px">
-<p style="font-size:28px;font-weight:700;color:#1D2630;background:#F2B600;padding:4px 18px;border-radius:20px;align-self:flex-start">제품 이름</p>
-<h3 style="font-size:44px;font-weight:700;line-height:1.3;color:#FFFFFF">시니어<br>나노모빌리티</h3>
-<p style="font-size:32px;line-height:1.45;color:#D5DBE1">시니어의 근거리 이동 기기<br>돌발 상황에서 기기가 먼저 멈춘다</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:40px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:28px;font-weight:700;color:#1D2630;background:#FFF4CC;border:2px solid #F2B600;padding:2px 18px;border-radius:20px;align-self:flex-start">법적 분류</p>
-<h3 style="font-size:44px;font-weight:700;line-height:1.3;color:#1D2630">전동휠체어<br>의료용 스쿠터</h3>
-<p style="font-size:32px;line-height:1.45;color:#4A5560">의료기기로 허가 → 보행자 지위 → 보도 주행<br>시장은 급여가 아닌 시니어 일반 시장</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:40px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:28px;font-weight:700;color:#1D2630;background:#E4E8EC;padding:4px 18px;border-radius:20px;align-self:flex-start">기존 휠체어와 차이</p>
-<h3 style="font-size:44px;font-weight:700;line-height:1.3;color:#1D2630">같은 분류<br>다른 기능</h3>
-<p style="font-size:32px;line-height:1.45;color:#4A5560">자율 감속·정지 · 승하차 좌석<br>장애인 보조기기가 아닌 시니어 제품</p>
-</div>
-</div>
-<div style="display:flex;align-items:center;gap:24px;background:#F2F4F6;padding:24px 36px;border:2px solid #F2F4F6;border-radius:16px">
-<p style="font-size:30px;font-weight:700;color:#1D2630;background:#FFF4CC;border:2px solid #F2B600;padding:4px 20px;border-radius:24px">정리</p>
-<p style="font-size:36px;font-weight:700;line-height:1.4;color:#1D2630">같은 기기의 두 이름: 제품은 나노모빌리티, 제도상 분류는 전동휠체어</p>
-</div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">도로교통법 시행규칙 제2조(보행보조용 의자차: 의료기기 기준규격에 따른 전동휠체어·의료용 스쿠터) · 기획서 5-1, 6-4</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">5</p>
-<aside>용어부터 정리하고 가겠습니다. 저희가 만드는 건 시니어 나노모빌리티라고 부르는 1인용 이동 기기예요. 걷기엔 멀고 대중교통은 부담스러운 거리를 안전하게 다니는 게 목적이고, 돌발 상황에서 기기가 먼저 감속하고 멈추는 게 핵심입니다. 법적으로는 이 기기를 의료기기 기준에 맞춰 전동휠체어나 의료용 스쿠터로 허가받아요. 그래야 보행자로 인정돼서 보도를 다닐 수 있고, 전동킥보드 같은 개인형 이동장치와는 다른 길입니다. 그러니까 나노모빌리티와 휠체어는 다른 물건이 아니라, 제품 이름과 제도상 분류가 다른 같은 기기예요. 의료기기 분류는 보도를 다니기 위한 조건이고, 시장은 장애인 보조기기 급여 시장이 아니라 시니어 일반 시장을 봅니다. 기존 휠체어와 다른 점은 자율 감속·정지, 승하차 좌석 기능, 그리고 대상이 시니어라는 것입니다.</aside>
-</section>
-<section id="concept" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">공항 자율주행 휠체어 이용 후기(중단 버튼 부재)를 반영해 수동 전환을 보장</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">6</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">3. 솔루션</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">위험 상황 4단계 대응</h2>
-  </div>
-  <div style="position:absolute; top:762.05px; left:50%; width:1748px; height:110px; display:flex; flex-direction:row; gap:24px; align-items:center; padding:28px 36px; background:#1d2630; border-radius:16px; transform:translateX(-50%)">
-    <p style="padding:6px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630; background:#f2b600; border-radius:24px">원칙</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; line-height:1.4; color:#ffffff">언제든 <span style="color:#f2b600">수동 조작</span>으로 전환 · 충돌 직전에는 시스템 정지가 우선</p>
-  </div>
-  <div style="position:absolute; top:290.05px; left:86px; width:859px; height:193px; display:flex; flex-direction:row; gap:36px; align-items:center; padding:40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">1</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">경고</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560">소리 · 진동으로 위험을 알림</p>
-    </div>
-  </div>
-  <div style="position:absolute; top:290.05px; left:976px; width:859px; height:193px; display:flex; flex-direction:row; gap:36px; align-items:center; padding:40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">2</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">감속</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560">위험 접근 시 미리 속도를 낮춤</p>
-    </div>
-  </div>
-  <div style="position:absolute; top:514.05px; left:86px; width:859px; height:193px; display:flex; flex-direction:row; gap:36px; align-items:center; padding:40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">3</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">정지</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560">충돌 직전 즉시 정지</p>
-    </div>
-  </div>
-  <div style="position:absolute; top:514.05px; left:976px; width:859px; height:193px; display:flex; flex-direction:row; gap:36px; align-items:center; padding:40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">4</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">우회</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560">지나갈 경로가 있으면 피해서 이동</p>
-    </div>
-  </div>
-  <aside>핵심은 돌발 상황에서 기계가 알아서 멈추거나 피하는 기능이에요. 위험한 정도에 따라 경고, 감속, 정지, 우회 순서로 반응하고요. 공항 자율주행 휠체어 후기를 보니까 일시정지 말고는 끌 방법이 없어서 불편하다는 얘기가 있었어요. 그래서 타는 분이 언제든 직접 조작으로 넘어갈 수 있게 하고, 다만 부딪히기 직전에는 시스템 정지가 먼저 걸리게 했어요.</aside>
-</section>
-<section id="scenarios" style="display:flex; flex-direction:column; gap:56px; padding:44px 86px 100px; background:#ffffff">
+<section id="structure" data-transition="fade" style="display:flex; flex-direction:column; gap:56px; padding:44px 86px 100px; background:#ffffff">
   <div style="display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">3. 솔루션</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">시뮬레이션 시나리오 3가지</h2>
-  </div>
-  <div style="display:flex; flex-direction:row; gap:32px">
-    <div style="display:flex; flex-direction:column; gap:16px; flex:1; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">1</p>
-      </div>
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:42px; font-weight:700; line-height:1.3; color:#1d2630">골목·출입구에서 사람 돌발 출현</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>감지</b></span> 전방 Depth Camera</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>반응</b></span> 접근 시 미리 감속, 출현 즉시 정지</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>대응 사고</b></span> 보행자 충돌&nbsp;<br>(전동보장구 사고의 22.5%)</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:16px; flex:1; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">2</p>
-      </div>
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:42px; font-weight:700; line-height:1.3; color:#1d2630">골목·주차장에서 차량 진출·후진</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>감지</b></span> 전방 Depth Camera</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>반응</b></span> 출입구 앞 감속, 차량 감지 시 정지와 경고음</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>대응 사고</b></span> 차량 충돌&nbsp;<br>(전동보장구 사고의 24.5%)</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:16px; flex:1; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <div style="width:80px; height:80px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">3</p>
-      </div>
-      <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:42px; font-weight:700; line-height:1.3; color:#1d2630">보도 없는 이면도로의 뒤차 접근</h3>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>감지</b></span> 후방 라이다</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>반응</b></span> 길 가장자리로 붙어 정지, 통과 후 재출발</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#4a5560"><span style="color:#3e5568"><b>대응 사고</b></span> 이면도로·골목 사고&nbsp;<br>(노인 보행사고의 46.5%)</p>
-    </div>
-  </div>
-  <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:24px 36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:24px">재현 환경</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#1d2630">가상 시가지의 출입구 · 차고지 · 주차장 · 이면도로에서 재현 (결과는 15~29쪽)</p>
-  </div>
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">사고 비율 출처: 한국소비자원 전동보장구 사고 조사(2016) · TAAS 동대문구(2025)</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">7</p>
-  <aside>시뮬레이션에서는 세 가지 상황을 재현해요. 골목에서 사람이 갑자기 튀어나올 때, 차량이 나오거나 후진할 때, 보도 없는 이면도로에서 뒤차가 다가올 때예요. 셋 다 동대문구 사고 유형 1위인 이면도로·골목 상황이고, 기기가 먼저 속도를 줄이고 멈추면 피할 수 있는 경우라서 골랐어요.</aside>
-</section>
-<section id="stopping" style="display:flex; flex-direction:column; gap:56px; padding:44px 86px 100px; background:#ffffff">
-  <div style="display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">3. 솔루션</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">정지거리 비교: 시스템 vs 사람</h2>
-  </div>
-  <div style="display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
-      <p style="width:160px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">시스템</p>
-      <div style="width:520px; display:flex; flex-direction:column; padding:18px 28px; background:#f2b600; border-radius:12px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">약 1.3m</p>
-      </div>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; color:#4a5560">반응 0.2초</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
-      <p style="width:160px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">사람</p>
-      <div style="width:1040px; display:flex; flex-direction:column; padding:18px 28px; background:#1d2630; border-radius:12px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#ffffff">약 2.6m</p>
-      </div>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; color:#4a5560">반응 1초</p>
-    </div>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; color:#4a5560">가정치: 6km/h(약 1.7m/s), 감속 1.5m/s²</p>
-  </div>
-  <div style="display:flex; flex-direction:row; gap:32px">
-    <div style="display:flex; flex-direction:row; gap:28px; align-items:center; flex:1; padding:32px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <div style="width:72px; height:72px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">1</p>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-        <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">줄일 수 있는 사고</h3>
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5560">기기가 접근하다 생기는 충돌&nbsp;<br>(사람 출현 · 차량 진출 · 뒤차 접근)</p>
-      </div>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:28px; align-items:center; flex:1; padding:32px; background:#f7f8fa; border:2px solid #f7f8fa; border-radius:16px">
-      <div style="width:72px; height:72px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#a9b8c6; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">2</p>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:8px; flex:1">
-        <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">한계와 대응</h3>
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5560">정지한 기기를 차량이 들이받는 경우:&nbsp;<br>경고 · 가장자리 이동으로 완화, 시뮬레이션 검증</p>
-      </div>
-    </div>
-  </div>
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">직접 계산한 가정치 · 네 값을 정한 기준은 다음 장</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">8</p>
-  <aside>6km/h로 가고 있을 때 시스템이 0.2초 만에 반응해서 1.5m/s²로 줄이면 약 1.3m 안에 멈춰요. 사람은 반응하는 데 1초쯤 걸린다고 보면 2.6m 정도가 필요하고요. 다만 이게 다 해결해 주는 건 아니에요. 기기가 먼저 위험 쪽으로 다가가다 생기는 사고는 줄일 수 있지만, 서 있는 기기를 차량이 들이받는 경우는 한계가 있어서 경고랑 가장자리 이동으로 줄이고 시뮬레이션으로 확인할 계획입니다. 이 숫자들은 가정치예요.</aside>
-</section>
-<section id="assumptions" style="display:flex; flex-direction:column; gap:40px; padding:44px 86px 100px; background:#ffffff">
-  <div style="display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">3. 솔루션</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">정지거리 가정치는 이렇게 정했다</h2>
-  </div>
-  <div style="display:grid; gap:28px; grid-template-columns:1fr 1fr">
-    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#3e5568">6 km/h</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">기기 최고속도</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">빠른 걸음 속도 · 식약처 기준의 경계 속도 ⑥</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#3e5568">0.2 s</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">시스템 반응 지연</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">카메라 1프레임 + 판단 + 제동 응답을 넉넉히 합친 값</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#1d2630">1.0 s</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">사람 반응 지연</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">실제 고령 운전자 1.3~2.3 s보다 빠르게 잡은 값 ①②③</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#1d2630">1.5 m/s²</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">감속도</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">대중교통 상용 제동의 상한 · 2.0부터는 승객이 못 견딤 ④⑤</p>
-    </div>
-  </div>
-  <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:22px 36px; background:#1d2630; border:2px solid #1d2630; border-radius:16px">
-    <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630; background:#f2b600; border-radius:24px">유의</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#ffffff">네 값 모두 가정값 → 센서·기기 확정 후 실측해서 재검증</p>
-  </div>
-  <p style="position:absolute; top:973.94px; left:86px; width:1560px; height:98.04px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">정지거리 = v·τ + v²/2a&nbsp;<br>출처 ① FHWA 고령 운전자 반응시간 ② 국내 운전자 반응시간 ③ 고령자 돌발 반응 ④ 철도 가감속 범위 ⑤ 승객 허용 감속 ⑥ 식약처 동력보조장치 기준</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">9</p>
-  <aside>앞 장의 숫자가 어디서 나왔는지 말씀드리면요. 속도 6킬로미터는 빠른 걸음 정도이고, 식약처 기준에서도 6킬로미터를 넘기면 별도 위험관리가 필요한 경계 속도예요. 시스템 반응 0.2초는 카메라 한 프레임, 인식과 판단, 모터가 제동을 거는 시간까지 넉넉하게 합친 값이고요. 사람 반응 1초는 국내 운전자 평균이 1.27초, 고령 운전자는 돌발 상황에서 1.3초에서 2.3초까지 측정된 걸 감안하면 오히려 사람 쪽에 유리하게 잡은 값이에요. 감속 1.5는 철도나 버스의 상용 제동이 0.7에서 1.5 사이이고 2.0부터는 대부분 승객이 견디기 어렵다는 연구를 참고해서 그 상한으로 잡았습니다. 네 값 모두 아직 가정이라서, 센서랑 기기가 정해지면 실측해서 같은 시나리오를 다시 돌릴 계획이에요.</aside>
-</section>
-<section id="structure" style="display:flex; flex-direction:column; gap:56px; padding:44px 86px 100px; background:#ffffff">
-  <div style="display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">4. 구현</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">1. 플랫폼</p>
     <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">6바퀴 구조 보완안</h2>
   </div>
   <div style="display:flex; flex-direction:row; gap:40px">
-    <img src="media/structure_concept.png" alt="시니어 나노모빌리티 구조 보완안: 외관, 하부 6바퀴 배치, 승하차 공간 확보" style="width:1320px; height:743px; border:2px solid #f2f4f6; border-radius:16px; object-fit:contain">
+    <img src="media/structure_concept.png" alt="이동 플랫폼 구조 보완안: 외관, 하부 6바퀴 배치, 승하차 공간 확보" style="width:1320px; height:743px; border:2px solid #f2f4f6; border-radius:16px; object-fit:contain">
     <div style="display:flex; flex-direction:column; gap:20px; flex:1">
       <div style="display:flex; flex-direction:row; gap:16px; align-items:center">
         <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
@@ -401,198 +72,109 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
     </div>
   </div>
   <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">콘셉트 예시 이미지(외장 디자인과 작동 구조를 함께 고려한 설계 제안)</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">10</p>
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">2</p>
   <aside>저희가 생각한 구조 콘셉트예요. 겉모양과 실제로 움직이는 구조를 같이 고려해서 그린 예시 이미지입니다. 아래쪽은 바퀴 여섯 개고, 가운데 좌우 독립 구동륜이 주행을 맡아요. 앞뒤 캐스터와 가동 지지암은 균형을 잡고 턱을 넘을 때 도와주고요. 탈 때는 팔걸이를 올리고 발판을 접고, 좌석이 회전하면서 옆으로 움직여요. 전방 센서는 차체에 붙여 두었어요. 어디까지나 설계 제안이라 치수, 부품 간섭, 무게중심은 앞으로 검증해야 합니다.</aside>
 </section>
-<section id="tech" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">도로교통법 시행규칙 제2조 · 식약처 전동휠체어 보도 주행 기준 · SBS Biz(65세 이상 개인형 이동장치 가해 사고 2022년 64건 → 2025년 108건)</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">11</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">4. 구현</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">구성과 설계 제약</h2>
-  </div>
-  <div style="position:absolute; top:775.81px; left:86px; width:1785.21px; height:106px; display:flex; flex-direction:row; gap:24px; align-items:center; padding:24px 36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:24px">정리</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#1d2630">차체 폭 1m 이하 고정이 6륜 차체 설계 시 관건</p>
-  </div>
-  <div style="position:absolute; top:281.37px; left:86px; width:859px; height:396px; display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; font-weight:700; color:#3e5568">구성</p>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">1</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">구조</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">6바퀴, 좌우 구동륜(BLDC) + 앞뒤 캐스터</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">2</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">편의</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">좌석 평행이동·회전, 팔걸이 올림, 발판 접힘</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">3</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">인식</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">전방 Depth 카메라(차체 고정), 후방 라이다</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">4</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">제어</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">감지 → 판단 → 모터 제어 → 피드백</p>
-    </div>
-  </div>
-  <div style="position:absolute; top:281.37px; left:976px; width:895.2px; height:396px; display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; font-weight:700; color:#3e5568">제약</p>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">1</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">차체 폭</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">1 m 이하 (의료기기 기준 적합 시 보행자)</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">2</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">속도</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">최고 6 km/h, 보도 주행 전제</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">3</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">분류</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">개인형 이동장치(전동킥보드)가 아닌 보행보조기기</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
-      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#a9b8c6; border-radius:256px">
-        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">4</p>
-      </div>
-      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#4a5560">확인 필요</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#4a5560">비장애 시니어 적용, 센서 유효거리, 무게중심</p>
-    </div>
-  </div>
-  <aside>구성부터 보면, 바퀴는 여섯 개고 좌우 구동륜을 BLDC 모터로 돌려요. 좌석은 옆으로 움직이고 회전해서 타고 내리기 편하게 했고요. 센서는 앞에 Depth 카메라, 뒤에 라이다를 쓰고, 감지하고 판단하고 모터를 제어한 뒤 결과를 다시 확인하는 구조예요. 제약은 차체 폭이 1미터 이하여야 한다는 거예요. 의료기기 기준에 맞으면 법적으로 보행자로 인정돼서 보도를 다닐 수 있거든요. 전동킥보드 같은 개인형 이동장치가 아니라 보행보조기기로 분류하는 이유이기도 해요. 다만 장애가 없는 시니어한테도 이게 적용되는지, 센서가 실제로 얼마나 멀리 보는지는 더 확인해야 해요.</aside>
-</section>
-<section id="bldc" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:56px">
+<section id="platform" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:28px;font-weight:700;color:#3E5568">4. 구현</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">BD60 BLDC 모터 실측</h2>
+<p style="font-size:30px;font-weight:700;color:#3E5568">1. 플랫폼</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">플랫폼 구조: 공통 구동 베이스 + 용도별 상부 모듈</h2>
 </div>
-<div style="display:flex;gap:40px">
-<img src="media/bldc_motor.jpg" alt="SEWOO BD60-N024020 BLDC 모터 명판, 24V 20W 3000RPM" style="width:612px;height:700px;object-fit:cover;border-radius:16px;border:2px solid #F2F4F6">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px">
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:64px;height:64px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:32px;font-weight:700;color:#1D2630">1</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:36px;font-weight:700;color:#1D2630">시험 대상</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">SEWOO BD60-N024020 (24 V · 20 W · 3000 rpm), 컨트롤러 Makerbase MKSESC 75100 V2</p></div>
+<div style="display:flex;gap:32px">
+<div style="width:700px;display:flex;flex-direction:column;gap:18px;background:#1D2630;padding:36px 40px;border:2px solid #1D2630;border-radius:16px">
+<p style="font-size:28px;font-weight:700;color:#1D2630;background:#F2B600;padding:4px 18px;border-radius:20px;align-self:flex-start">공통 베이스 (플랫폼)</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.3;color:#FFFFFF">어떤 상부를 얹어도<br>같은 안전정지 모듈</h3>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="width:48px;height:48px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700;color:#1D2630">1</p></div>
+<p style="flex:1;font-size:29px;line-height:1.4;color:#FFFFFF"><b>구동</b> 6바퀴, 좌우 독립 구동륜(BLDC) + 앞뒤 캐스터</p>
 </div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:64px;height:64px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:32px;font-weight:700;color:#1D2630">2</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:36px;font-weight:700;color:#1D2630">저항</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">선간 평균 약 <b style="color:#1D2630">2.139 Ω</b>, 세 쌍 편차 0.55%</p></div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="width:48px;height:48px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700;color:#1D2630">2</p></div>
+<p style="flex:1;font-size:29px;line-height:1.4;color:#FFFFFF"><b>인식</b> 전방 Depth 카메라, 후방 라이다, IMU</p>
 </div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:64px;height:64px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:32px;font-weight:700;color:#1D2630">3</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:36px;font-weight:700;color:#1D2630">인덕턴스</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">LCR 미터(1 kHz)로 선간 Ls <b style="color:#1D2630">3.72~4.00 mH</b></p></div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="width:48px;height:48px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700;color:#1D2630">3</p></div>
+<p style="flex:1;font-size:29px;line-height:1.4;color:#FFFFFF"><b>안전정지 제어</b> 경고 → 감속 → 정지 → 우회, 경사·턱 보정</p>
 </div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:64px;height:64px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:32px;font-weight:700;color:#1D2630">4</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:36px;font-weight:700;color:#1D2630">역기전력</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">모터를 발전기로 돌려 측정. 21.55 Hz 9.36 Vpp, 33.33 Hz 14.5 Vpp</p></div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="width:48px;height:48px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:26px;font-weight:700;color:#1D2630">4</p></div>
+<p style="flex:1;font-size:29px;line-height:1.4;color:#FFFFFF"><b>공통 제약</b> 폭 1 m 이하, 최고 6 km/h, 보도 · 협소 공간</p>
+</div>
+</div>
+<div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2B600;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#F2B600;padding:2px 16px;border-radius:20px;align-self:flex-start">1차 · 탑승형</p>
+<h3 style="font-size:34px;font-weight:700;line-height:1.3;color:#1D2630">탑승형 좌석 모듈</h3>
+<p style="font-size:27px;line-height:1.4;color:#4A5560">좌석 평행이동·회전으로 승하차<br>고령·거동 불편 사용자, 0.5~2 km</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#E4E8EC;padding:4px 16px;border-radius:20px;align-self:flex-start">확장 1</p>
+<h3 style="font-size:34px;font-weight:700;line-height:1.3;color:#1D2630">공유 · 라스트마일</h3>
+<p style="font-size:27px;line-height:1.4;color:#4A5560">단지·캠퍼스·대형 시설 안 짧은 이동<br>나인봇형 공유 플랫폼</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#E4E8EC;padding:4px 16px;border-radius:20px;align-self:flex-start">확장 2</p>
+<h3 style="font-size:34px;font-weight:700;line-height:1.3;color:#1D2630">협소 공간 실내외 이동</h3>
+<p style="font-size:27px;line-height:1.4;color:#4A5560">복도·매장·통로 등 좁은 공간<br>폭 0.9 m, 제자리 회전</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4F6;padding:28px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#E4E8EC;padding:4px 16px;border-radius:20px;align-self:flex-start">확장 3</p>
+<h3 style="font-size:34px;font-weight:700;line-height:1.3;color:#1D2630">무인 · 서비스 상부</h3>
+<p style="font-size:27px;line-height:1.4;color:#4A5560">카트·운반 등 사람이 타지 않는 용도<br>[기업체 협의 후 결정]</p>
 </div>
 </div>
 </div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">BD60 BLDC 실험 패키지(2026.10.06) · 상온 약 25 °C · 극쌍 p=2는 채택한 가정</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">12</p>
-<aside>모터 제어 실습으로 BD60 BLDC 모터의 전기 파라미터를 직접 쟀어요. 모터는 SEWOO BD60-N024020이고 24V, 20W, 3000rpm짜리예요. 컨트롤러는 VESC 기반 Makerbase MKSESC 75100 V2를 썼고요. 선간 저항은 세 쌍 평균이 약 2.139옴이고 쌍마다 차이는 0.55% 정도였어요. LCR 미터로 1kHz에서 잰 인덕턴스는 3.72에서 4.00mH 사이였고요. 역기전력은 모터를 발전기처럼 돌려서 오실로스코프로 읽었는데, 두 속도에서 21.55Hz일 때 9.36Vpp, 33.33Hz일 때 14.5Vpp가 나왔어요. 극쌍 수 2는 저희가 정한 가정입니다.</aside>
+<div style="display:flex;align-items:center;gap:24px;background:#F2F4F6;padding:22px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:30px;font-weight:700;color:#1D2630;background:#FFF4CC;border:2px solid #F2B600;padding:4px 20px;border-radius:24px">정리</p>
+<p style="font-size:32px;font-weight:700;line-height:1.4;color:#1D2630">제품 하나가 아니라 이동체 플랫폼 → 안전정지 모듈은 상부와 무관하게 공통</p>
+</div>
+<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">시뮬레이션 E1~E5는 공통 베이스 기준 · 상부 모듈 구성과 법적 분류는 기업체와 협의</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">3</p>
+<aside>제품 하나를 만드는 게 아니라 이동체 플랫폼으로 보겠다는 게 이번 주 가장 큰 변화예요. 왼쪽이 공통 베이스인데, 6바퀴 구동부와 센서, 그리고 경고부터 우회까지 가는 안전정지 제어기까지가 베이스에 들어가요. 오른쪽은 그 위에 얹는 상부 모듈이에요. 1차는 승하차 좌석을 얹은 탑승형이고, 같은 베이스로 나인봇 같은 공유·라스트마일, 복도나 매장 같은 협소 공간용, 사람이 안 타는 운반용까지 갈 수 있어요. 지금까지 돌린 시뮬레이션은 전부 이 공통 베이스 기준이라서 어떤 상부에도 그대로 쓸 수 있습니다. 상부 모듈을 어디까지 할지는 기업체와 협의해서 정하겠습니다.</aside>
 </section>
-<section id="bemfwave" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">조건 2의 60 ms는 두 주기라 33.33 Hz (스코프 표시 16.67 Hz는 한 주기로 본 값) · 오실로스코프 커서 측정</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">13</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:114px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:24px; font-weight:700; color:#3e5568">4. 구현</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">역기전력 측정: 두 속도 비교</h2>
-  </div>
-  <div style="position:absolute; top:205px; left:86px; width:1748px; height:613px; display:flex; flex-direction:row; gap:48px">
-    <div style="width:1100px; display:flex; flex-direction:column; gap:16px">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#3e5568">스코프 커서 값으로 재구성한 비교 파형</p>
-      <img src="media/bemf_wave.png" alt="조건 1 21.55 Hz 9.36 Vpp와 조건 2 33.33 Hz 14.5 Vpp의 정현파 재구성 비교" style="width:1100px; height:557px; border:2px solid #f2f4f6; border-radius:16px; object-fit:contain">
-    </div>
-    <div style="display:flex; flex-direction:column; gap:24px; flex:1">
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#3e5568">측정 조건</p>
-      <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-        <div style="width:64px; height:64px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-          <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">1</p>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:6px; flex:1">
-          <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">21.55 Hz</h3>
-          <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.4; color:#4a5560">9.36 Vpp · 약 647 rpm</p>
-        </div>
-      </div>
-      <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-        <div style="width:64px; height:64px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
-          <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">2</p>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:6px; flex:1">
-          <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">33.33 Hz</h3>
-          <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.4; color:#4a5560">14.5 Vpp · 약 1000 rpm</p>
-        </div>
-      </div>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.4; color:#4a5560">극쌍 p=2 가정 시 환산한 회전수</p>
-    </div>
-  </div>
-  <div style="position:absolute; top:865px; left:86px; width:1748px; height:98px; display:flex; flex-direction:row; gap:32px">
-    <div style="display:flex; flex-direction:row; gap:24px; align-items:center; flex:1; padding:24px 32px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:24px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:24px">정리</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.4; color:#1d2630">속도 1.55배 → Vpp 약 1.55배, 역기전력은 속도에 비례</p>
-    </div>
-    <div style="display:flex; flex-direction:row; gap:24px; align-items:center; flex:1; padding:24px 32px; background:#f7f8fa; border:2px solid #f7f8fa; border-radius:16px">
-      <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:24px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:24px">주의</p>
-      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.4; color:#4a5560">이상 정현파로 재구성한 그래프 (실측 원시 파형 아님)</p>
-    </div>
-  </div>
-  <aside>역기전력을 속도 두 가지로 비교한 거예요. 모터를 발전기처럼 돌리면서 오실로스코프로 선간 전압을 읽었어요. 조건 1은 46.4밀리초가 한 주기라서 21.55Hz, 진폭은 9.36Vpp예요. 조건 2는 60밀리초 안에 두 주기가 들어 있어서 33.33Hz, 14.5Vpp고요. 스코프에 16.67Hz로 뜨는 건 두 주기를 한 주기로 본 값이라서 보정했어요. 속도가 1.55배쯤 빨라졌더니 전압도 1.55배쯤 커졌고, 그래서 역기전력이 속도에 비례한다고 볼 수 있어요. 그래프는 커서로 읽은 값으로 다시 그린 이상적인 사인파고 실제 측정 파형은 아니에요. 극쌍 수 2로 가정하면 두 조건은 약 647rpm과 1000rpm입니다.</aside>
+<section id="safety" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#3E5568">2. 시뮬레이션</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">자율 안전 기능: 감지해서 멈추고, 알고 미리 대비한다</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4F6;padding:36px 40px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#E4E8EC;padding:4px 18px;border-radius:20px;align-self:flex-start">피드백 · 감지한 뒤 반응</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.3;color:#1D2630">사람이 늦게 반응해도<br>기기가 먼저 멈춘다</h3>
+<div style="display:flex;gap:12px;align-items:center">
+<p style="font-size:28px;font-weight:700;color:#1D2630;background:#FFFFFF;padding:10px 20px;border:2px solid #E4E8EC;border-radius:12px">경고</p>
+<div style="width:40px;height:22px;background:#F2B600;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);flex:0 0 auto"></div>
+<p style="font-size:28px;font-weight:700;color:#1D2630;background:#FFFFFF;padding:10px 20px;border:2px solid #E4E8EC;border-radius:12px">감속</p>
+<div style="width:40px;height:22px;background:#F2B600;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);flex:0 0 auto"></div>
+<p style="font-size:28px;font-weight:700;color:#1D2630;background:#F2B600;padding:10px 20px;border:2px solid #F2B600;border-radius:12px">정지</p>
+<div style="width:40px;height:22px;background:#F2B600;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);flex:0 0 auto"></div>
+<p style="font-size:28px;font-weight:700;color:#1D2630;background:#FFFFFF;padding:10px 20px;border:2px solid #E4E8EC;border-radius:12px">우회</p>
+</div>
+<p style="font-size:30px;line-height:1.45;color:#4A5560">전방 Depth 카메라 · 후방 라이다로 사람·차량·턱을 감지<br>반응 0.2 s → 6 km/h에서 정지거리 약 <b>1.3 m</b><br>사람 조작 반응 1.0 s → 약 <b>2.6 m</b></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1D2630;padding:36px 40px;border:2px solid #1D2630;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#F2B600;padding:4px 18px;border-radius:20px;align-self:flex-start">피드포워드 · 알고 미리 대비</p>
+<h3 style="font-size:40px;font-weight:700;line-height:1.3;color:#FFFFFF">위험한 곳은 보이기 전에<br>미리 속도를 줄인다</h3>
+<p style="font-size:30px;line-height:1.45;color:#FFFFFF">출입구 · 차고지 출구 · 주차장 · 이면도로 진입 전에 <b>0.8 m/s로 사전 감속</b><br>내리막 · 턱은 IMU와 Depth로 읽어 <b>속도를 미리 낮춤</b></p>
+<p style="font-size:28px;line-height:1.45;color:#D5DBE1">자동차가 터널 앞에서 창문을 미리 올리듯, 감지 후 반응만으로는 늦는 2~3 m 출현을 사전 대비로 막는다</p>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#F2F4F6;padding:22px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:30px;font-weight:700;color:#1D2630;background:#FFF4CC;border:2px solid #F2B600;padding:4px 20px;border-radius:24px">원칙</p>
+<p style="font-size:32px;font-weight:700;line-height:1.4;color:#1D2630">언제든 수동 조작으로 전환 · 충돌 직전에는 시스템 정지가 우선</p>
+</div>
+<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">가정: 최고 6 km/h, 감속 1.5 m/s² (근거는 부록 18~19쪽) · 다음 장부터 가상 시가지에서 사람 조작 vs 기기 조작 영상</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">4</p>
+<aside>자율 안전 기능은 두 층이에요. 왼쪽은 감지한 뒤 반응하는 피드백이에요. 카메라와 라이다로 사람이나 차, 턱을 보면 경고, 감속, 정지, 우회 순서로 대응하고, 반응이 0.2초라서 6킬로미터에서 1.3미터 안에 멈춥니다. 사람은 1초쯤 걸려서 2.6미터가 필요하고요. 오른쪽은 알고 미리 대비하는 피드포워드예요. 출입구나 차고지 출구, 주차장처럼 뭔가 튀어나올 수 있는 곳은 보이기 전에 미리 0.8미터 속도로 줄여 두고, 내리막이나 턱도 미리 속도를 낮춥니다. 자동차가 터널 앞에서 창문을 올리는 것과 같은 개념이에요. 감지 후 반응만으로는 늦는 2~3미터 출현을 이걸로 막습니다. 원칙은 언제든 수동으로 넘어갈 수 있되, 부딪히기 직전에는 시스템 정지가 먼저라는 거예요. 다음 장부터 영상으로 보겠습니다.</aside>
 </section>
-<section id="bldcmodel" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">p=2 가정 · 진폭불변 dq 정의, id≈0 · 두 점 피팅 일치율(0.16%)은 측정 정확도가 아님</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">14</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:126px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#3e5568">4. 구현</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:72px; font-weight:700; line-height:1.15; color:#1d2630">계산된 모터 파라미터</h2>
-  </div>
-  <div style="position:absolute; top:199px; left:86px; width:960px; display:flex; flex-direction:column; gap:16px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:31px; font-weight:700; color:#3e5568">두 속도의 역기전력 비교</p>
-    <img src="media/bldc_model.png" alt="두 속도 조건의 선간 역기전력 Vpp와 전기 주파수 관계, 원점 통과 피팅" style="width:960px; height:486px; border:2px solid #f2f4f6; border-radius:16px; object-fit:contain">
-  </div>
-  <div style="position:absolute; top:775px; left:86px; width:1748px; height:192px; display:flex; flex-direction:row; gap:32px">
-    <div style="display:flex; flex-direction:column; gap:10px; flex:1; padding:24px 32px; background:#f7f8fa; border:2px solid #f7f8fa; border-radius:16px">
-      <p style="width:150px; padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; text-align:center; color:#1d2630; background:#e4e8ec; border-radius:24px">미완료</p>
-      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:29px; line-height:1.4; color:#4a5560">안정 회전 · Hall 검출 · 축토크 · 관성/마찰 · 효율 · 제동&nbsp;<br>(초기 구동은 반응했으나 과전류 오류와 떨림)</p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:10px; flex:1; padding:24px 32px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
-      <p style="width:150px; padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; text-align:center; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:24px">정리</p>
-      <p style="width:803px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:29px; line-height:1.4; color:#1d2630">Kt는 계산값 (축토크 실측 아님),&nbsp;<br>시뮬레이션에는 초기 전기 모델부터 전달</p>
-    </div>
-  </div>
-  <p style="position:absolute; top:269.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; color:#4a5560">자속쇄교 ψf</p>
-  <p style="position:absolute; top:325.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:72px; font-weight:700; line-height:1.1; color:#3e5568">19.98 mWb</p>
-  <p style="position:absolute; top:418.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; color:#4a5560">역기전력 상수 Ke</p>
-  <p style="position:absolute; top:474.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:72px; font-weight:700; line-height:1.1; color:#3e5568">0.0400 V/(rad/s)</p>
-  <p style="position:absolute; top:568.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; color:#4a5560">토크 상수 Kt (계산값)</p>
-  <p style="position:absolute; top:624.95px; left:1094px; width:740px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:72px; font-weight:700; line-height:1.1; color:#1d2630">0.0599 N·m/A</p>
-  <aside>측정값으로 계산한 모델 값이에요. 두 속도에서 Vpp를 주파수로 나눠 보니 거의 같은 값이 나와서, 역기전력이 속도에 비례한다는 걸 확인했어요. 여기서 자속쇄교는 약 19.98mWb, 역기전력 상수는 약 0.04, 토크 상수는 약 0.0599 N·m/A로 계산했고요. 다만 토크 상수는 계산한 값이지 축에서 직접 잰 토크가 아니에요. 극쌍 수 2랑 id 0 가정도 깔려 있고요. 점이 두 개라 직선이 잘 맞는다고 해서 측정이 정확하다는 뜻은 아니에요. 아직 못 한 건 안정 회전, 홀 검출, 실제 축토크, 관성과 마찰, 효율, 제동이고, 초기 구동 때는 모터가 반응은 했지만 과전류 오류와 떨림이 있었어요. 일단 이 초기 전기 모델부터 시뮬레이션에 넘길 거예요.</aside>
-</section>
-<section id="simworld" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">worlds/nanomob_town.sdf · scripts/generic_world.py 로 생성 · 구역 A~E 배치는 다음 장</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">15</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
+<section id="simworld" data-transition="fade" style="background:#ffffff">
+  <p id="e1-ncjcj4" style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">worlds/nanomob_town.sdf · scripts/generic_world.py 로 생성 · 구역 A~E 배치는 다음 장</p>
+  <p id="e2-ncjcj4" style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">5</p>
+  <div id="9538e548" style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
     <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">가상 시가지</h2>
   </div>
-  <div style="position:absolute; top:206px; left:86px; width:1748px; height:710px; display:flex; flex-direction:row; gap:32px; align-items:start">
+  <div id="4b0ed723" style="position:absolute; top:206px; left:86px; width:1748px; height:710px; display:flex; flex-direction:row; gap:32px; align-items:start">
     <img src="media/town_sw.png" alt="가상 시가지 전체를 남서쪽 상공에서 본 Gazebo 렌더: 건물 5동, 버스 차고지, 주차장 2곳, 이면도로" style="width:1100px; height:713px; border:2px solid #e3e6ea; border-radius:16px">
     <div style="display:flex; flex-direction:column; gap:18px; flex:1">
       <img src="media/town_top.png" alt="가상 시가지를 수직으로 내려다본 평면 렌더" style="width:532px; height:299px; border:2px solid #e3e6ea; border-radius:16px">
@@ -607,14 +189,14 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
   </div>
   <aside>시뮬레이션 환경입니다. 실제 장소를 그대로 옮기지 않고, 건물과 출입구, 버스 차고지, 주차장, 보도 없는 이면도로, 경사와 턱 시험 레인을 일반적인 치수로 배치한 가상 시가지예요. 실측 지도와 항공사진은 라이선스 문제가 있어서 협업 범위가 정해진 뒤에 쓰기로 했습니다. 기기 모델에는 앞에 깊이 카메라, 뒤에 라이다, 그리고 IMU를 달았어요.</aside>
 </section>
-<section id="simenv" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">출입구·담장·주차 줄 위치, 도로 폭, 경사·턱 값은 현장 측량 전 가정값 · 상대 물체는 충돌 지오메트리 없이 기하학적으로 접촉 판정</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">16</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
+<section id="simenv" data-transition="fade" style="background:#ffffff">
+  <p id="e1-1d78eqb" style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">출입구·담장·주차 줄 위치, 도로 폭, 경사·턱 값은 현장 측량 전 가정값 · 상대 물체는 충돌 지오메트리 없이 기하학적으로 접촉 판정</p>
+  <p id="e2-1d78eqb" style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">6</p>
+  <div id="4c580c0f" style="position:absolute; top:44px; left:86px; width:1748px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
     <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">5개의 시나리오</h2>
   </div>
-  <div style="position:absolute; top:206px; left:86px; width:1748px; height:704px; display:flex; flex-direction:row; gap:32px">
+  <div id="4a10ea1d" style="position:absolute; top:206px; left:86px; width:1748px; height:704px; display:flex; flex-direction:row; gap:32px">
     <div style="width:980px; display:flex; flex-direction:column; gap:14px">
       <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#3e5568">가상 시가지 구역 및 시나리오</p>
       <div style="display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
@@ -664,9 +246,165 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
   </div>
   <aside>시뮬레이션은 특정 장소를 그대로 옮기지 않고, 보도와 도로 폭, 주차면, 담장 높이를 일반값으로 둔 가상 시가지에서 돌렸어요. 다섯 구역에서 E1부터 E5까지 다섯 시나리오를 재현했고, 전부 합쳐 482회 시행했습니다. 기기는 6킬로미터 속도, 감속 1.5, 반응 지연은 시스템 0.2초와 사람 1초를 비교했어요. 앞에는 6미터짜리 깊이 카메라, 뒤에는 12미터 라이다를 달았습니다.</aside>
 </section>
-<section id="simsummary" style="display:flex; flex-direction:column; gap:28px; padding:44px 86px 100px; background:#ffffff">
+<section id="sime2v" data-transition="fade" style="background:#ffffff">
+  <p id="e2-1ddv4bz" style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">7</p>
+  <div id="d6ca5c89" style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E2 출입구 보행자 · 영상</h2>
+  </div>
+  <div id="e3cb2582" style="position:absolute; top:238.54px; left:50%; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px; transform:translateX(-50%)">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">건물 출입구에서 보행자 출현 3 m · 보행자 1.2 m/s로 진로를 가로질러 지나감 · 기기 6 km/h</p>
+  </div>
+  <video src="media/e2_human.mp4" poster="media/e2_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 출입구 보행자 3 m 출현, 간신히 정지" style="position:absolute; top:389.98px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p id="07ec498e" style="position:absolute; top:701.98px; left:83.1px; width:275px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 (반응 1.0 s)</p>
+  <p id="b000ce1f" style="position:absolute; top:757.98px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">간신히 정지, 보행자와 이격 0.10 m<br>정지거리 3.18 m</p>
+  <video src="media/e2_system.mp4" poster="media/e2_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 출입구 보행자 3 m 출현, 감속 후 통과" style="position:absolute; top:389.98px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p id="19ec5c2d" style="position:absolute; top:701.98px; left:648.1px; width:245px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 (반응 0.2 s)</p>
+  <p id="b311b392" style="position:absolute; top:757.98px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">감속해 보행자를 보내고 통과<br>이격 0.44 m</p>
+  <video src="media/e2_preslow.mp4" poster="media/e2_preslow.jpg" muted loop playsinline preload="metadata" aria-label="시스템 + 사전감속: 출입구 앞 0.8 m/s로 접근, 여유 있게 통과" style="position:absolute; top:50%; left:1213.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px; transform:translateY(-50%);object-fit:cover"></video>
+  <p id="0ce3b873" style="position:absolute; top:701.98px; left:1213.1px; width:309px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 + 사전 대비</p>
+  <p id="90d3b4c9" style="position:absolute; top:757.98px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">여유 있게 통과, 이격 0.86 m<br>출입구 앞 0.8 m/s 사전 감속 (피드포워드)</p>
+  <aside>같은 조건에서 세 가지 대응을 영상으로 보겠습니다. 왼쪽 사람 조작은 1초 늦게 반응해서 보행자 코앞 10센티미터에서 겨우 멈춥니다. 가운데 시스템은 0.2초 만에 감속을 시작해서 44센티미터 여유를 두고 보행자를 보내고 지나가요. 오른쪽은 출입구가 있다는 걸 알고 미리 속도를 줄여 둔 사전 대비, 피드포워드인데, 86센티미터로 가장 여유가 있습니다.</aside>
+</section>
+<section id="sime1v" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">8</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E1 버스 진출 · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">차고지 담장 틈 · 버스 3 m/s(11 km/h) 진출 · 기기 6 km/h · 왼쪽 둘은 출현 4 m · 오른쪽은 2 m 출현 대비 설계</p>
+  </div>
+  <video src="media/e1_human.mp4" poster="media/e1_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 버스 4 m 출현, 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; width:265px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 · 출현 4 m</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 0.54 m/s<br>1초 지연 동안 1.7 m 진행</p>
+  <video src="media/e1_system.mp4" poster="media/e1_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 버스 4 m 출현, 정지 후 버스 통과 뒤 재출발" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 · 출현 4 m</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">정지 후 버스가 지나가면 재출발<br>이격 0.37 m</p>
+  <div style="position:absolute; top:50%; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:14px; justify-content:center; padding:28px 32px; background:#1d2630; border-radius:14px; transform:translateY(-50%)"><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#f2b600">2 m에서 나와도 멈추려면?</p><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:27px; line-height:1.45; color:#ffffff">차고지 출구 앞에서 0.8 m/s로 미리 감속 → 정지거리 0.37 m<br>E2 영상과 같은 사전 대비(피드포워드) 원리</p></div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 + 사전 대비 (설계)</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">차고지 출구 = 지도상 위험 지점<br>진입 전 0.8 m/s로 감속해 통과</p>
+  <aside>버스 진출 영상입니다. 왼쪽은 사람 조작인데 버스가 4미터 앞에서 나와도 1초 지연 동안 1.7미터를 더 가 버려서 부딪힙니다. 가운데 시스템은 같은 조건에서 멈추고, 버스가 지나가면 다시 출발해요. 다만 2미터처럼 아주 가까이서 나오면 감지 후 반응만으로는 늦기 때문에, 차고지 출구 같은 곳은 지도상 위험 지점으로 두고 진입 전에 0.8미터 속도로 미리 줄이는 사전 대비를 설계에 넣었습니다. 그러면 정지거리가 37센티미터라 2미터 출현도 멈춥니다.</aside>
+</section>
+<section id="sime3v" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">9</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E3 차량 후진 · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">주차장 옆 보행로 · 차량 2 m/s(7 km/h) 후진 · 기기 6 km/h · 왼쪽 둘은 출현 3 m · 오른쪽은 1 m 출현 대비 설계</p>
+  </div>
+  <video src="media/e3_human.mp4" poster="media/e3_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 후진 차량 3 m 출현, 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; width:265px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 · 출현 3 m</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 1.19 m/s<br>거의 감속하지 못한 채 접촉</p>
+  <video src="media/e3_system.mp4" poster="media/e3_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 후진 차량 3 m 출현, 정지 후 통과" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 · 출현 3 m</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">정지 후 차량이 지나가면 재출발<br>이격 0.40 m</p>
+  <div style="position:absolute; top:50%; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:14px; justify-content:center; padding:28px 32px; background:#1d2630; border-radius:14px; transform:translateY(-50%)"><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#f2b600">주차 줄에 가려 1 m에서 나오면?</p><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:27px; line-height:1.45; color:#ffffff">보행로 진입 전 0.8 m/s로 미리 감속 → 정지거리 0.37 m<br>시야 가림 구간은 사전 대비 + 경고음</p></div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 + 사전 대비 (설계)</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">주차 줄 = 시야 가림 구간<br>진입 전 0.8 m/s + 경고음</p>
+  <aside>주차장 후진 영상이에요. 사람 조작은 3미터에서 나온 차에 거의 그대로 부딪히고, 시스템은 멈춰서 차를 보냅니다. 주차된 차들이 시야를 가려서 1미터에서 나오는 경우는 감지 후 반응만으로는 늦기 때문에, 주차장 옆 보행로에 들어설 때 미리 0.8미터 속도로 줄이고 경고음을 내는 사전 대비를 설계에 넣었습니다. 그러면 정지거리가 37센티미터라 1미터 출현도 멈춥니다.</aside>
+</section>
+<section id="sime4v" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">10</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E4 이면도로 뒤차 접근 · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">폭 6 m 이면도로 · 뒤차 18 km/h, 감지 시 간격 10 m · 기기 6 km/h · 오른쪽은 25 km/h 뒤차 조건 설명</p>
+  </div>
+  <video src="media/e4_none.mp4" poster="media/e4_none.jpg" muted loop playsinline preload="metadata" aria-label="무반응 기준: 그대로 직진, 뒤차가 5 cm 옆으로 스쳐 지나감" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">그대로 직진<br>뒤차가 0.05 m 옆으로 스침</p>
+  <video src="media/e4_system.mp4" poster="media/e4_system.jpg" muted loop playsinline preload="metadata" aria-label="후방 감지 시스템: 길가로 붙고 감속, 뒤차가 0.66 m 간격으로 추월" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">후방 감지 시스템</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">길가로 붙고 1.0 m/s로 감속<br>추월 간격 0.66 m, 최소 이격 0.45 m</p>
+  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:14px; justify-content:center; padding:28px 32px; background:#1d2630; border-radius:14px"><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#f2b600">뒤차가 25 km/h로 오면?</p><p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:27px; line-height:1.45; color:#ffffff">라이다 12 m로는 길가로 붙을 시간이 모자란다<br>→ 후방 감지 20 m 이상 + 이면도로 진입 시 사전 감속</p></div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">센서 요구 사양</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">감지거리가 설계 변수<br>시료 센서 선정 시 반영</p>
+  <aside>뒤차 접근 영상입니다. 왼쪽은 아무 반응이 없는 기준인데 차가 5센티미터 옆으로 스쳐 지나가요. 가운데는 후방 라이다가 차를 보고 길가로 붙으면서 속도를 줄여서 66센티미터 간격으로 추월당합니다. 뒤차가 25킬로미터로 오면 12미터 라이다로는 붙을 시간이 모자라서, 후방 감지거리를 20미터 이상으로 잡고 이면도로에 들어설 때 미리 속도를 줄이는 쪽으로 반영했습니다.</aside>
+</section>
+<section id="sime5sv" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">11</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 내리막 경사 · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 내리막 12 % · 보행자 출현 2.5 m · 기기 6 km/h · 제동 한계 2.0 m/s² 가정</p>
+  </div>
+  <video src="media/e5_slope_noc3.mp4" poster="media/e5_slope_noc3.jpg" muted loop playsinline preload="metadata" aria-label="경사 보정 없음: 내리막에서 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">시스템, 경사 보정 없음</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 1.13 m/s<br>가용 감속도 0.83 m/s²로는 부족</p>
+  <video src="media/e5_slope_c3.mp4" poster="media/e5_slope_c3.jpg" muted loop playsinline preload="metadata" aria-label="경사 보정: 속도를 미리 낮춰 정지" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; width:314px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 경사 보정 (IMU)</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">최고속도 1.29 m/s로 낮춰 정지<br>이격 0.22 m</p>
+  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">왜 차이가 나나</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">내리막에서는 중력 성분만큼 쓸 수 있는 감속도가 줄어든다. 12 %에서는 2.0 → 0.83 m/s². IMU로 경사를 읽어 정지 예산에 넣으면 속도를 미리 낮춘다</p>
+  </div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">경사 보정 = 속도 자동 하향<br>평지와 같은 이격 유지</p>
+  <aside>내리막 영상입니다. 왼쪽은 경사를 모르는 시스템인데, 내리막에서는 같은 제동력으로도 줄일 수 있는 감속도가 작아져서 보행자와 부딪힙니다. 오른쪽은 IMU로 경사를 읽어서 최고속도를 1.29미터로 미리 낮춘 경우고, 22센티미터 여유를 두고 멈춰요.</aside>
+</section>
+<section id="sime5cv" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">12</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 보도 턱 3 cm · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 보도 턱 3 cm · 기기 6 km/h로 접근 · 캐스터 지름 18 cm</p>
+  </div>
+  <video src="media/e5_curb3_none.mp4" poster="media/e5_curb3_none.jpg" muted loop playsinline preload="metadata" aria-label="턱 3 cm, 무반응: 1.67 m/s 그대로 넘음" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">1.67 m/s 그대로 넘음<br>충격 큼</p>
+  <video src="media/e5_curb3_c1.mp4" poster="media/e5_curb3_c1.jpg" muted loop playsinline preload="metadata" aria-label="턱 3 cm, 턱 인식: 1.0 m/s로 감속해 통과" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 턱 인식</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">1.0 m/s로 감속해 통과<br>Depth 카메라로 턱 높이 측정</p>
+  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">턱 통과 속도 스윕</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">3 cm 턱은 0.6·0.8 m/s에서는 걸리고 1.0 m/s부터 넘는다. 그래서 3.5 cm 이하 턱은 1.0 m/s로 통과하도록 정했다</p>
+  </div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">3 cm 통과 속도 = 1.0 m/s<br>더 느리면 걸리고, 전속력은 충격</p>
+  <aside>턱 3센티미터 영상입니다. 인식이 없으면 전속력으로 넘어가서 충격이 크고, 인식이 있으면 1미터 속도로 줄여서 넘어요. 속도를 바꿔 봤더니 0.6이나 0.8에서는 걸리고 1.0부터 넘어가서, 3.5센티미터 이하 턱은 1미터 속도로 통과하게 정했습니다.</aside>
+</section>
+<section id="sime5cv2" data-transition="fade" style="background:#ffffff">
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">13</p>
+  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 보도 턱 5 cm · 영상</h2>
+  </div>
+  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
+    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 보도 턱 5 cm · 기기 6 km/h로 접근 · 캐스터 지름 18 cm</p>
+  </div>
+  <video src="media/e5_curb5_none.mp4" poster="media/e5_curb5_none.jpg" muted loop playsinline preload="metadata" aria-label="턱 5 cm, 무반응: 턱에 걸림" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
+  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">턱에 걸려 멈춤<br>1.4 m/s까지 올려도 못 넘음</p>
+  <video src="media/e5_curb5_c1.mp4" poster="media/e5_curb5_c1.jpg" muted loop playsinline preload="metadata" aria-label="턱 5 cm, 턱 인식: 턱 앞 0.30 m 정지" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
+  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 턱 인식</p>
+  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">턱 앞 0.30 m에서 정지<br>우회 필요</p>
+  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">설계 반영</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">캐스터 지름 18 cm로는 5 cm 턱을 넘지 못한다. 5 cm 이상은 정지 후 우회하거나, 캐스터 지름을 키우는 설계 검토가 필요하다</p>
+  </div>
+  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
+  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">5 cm 이상 = 정지 후 우회<br>캐스터 지름 재검토</p>
+  <aside>턱 5센티미터 영상입니다. 인식이 없으면 걸려서 멈추고, 속도를 1.4까지 올려도 못 넘어요. 인식이 있으면 턱 앞 30센티미터에서 멈춥니다. 5센티미터부터는 지금 캐스터로는 못 넘기 때문에 정지하고 우회하거나 캐스터를 키우는 쪽으로 설계를 봐야 해요.</aside>
+</section>
+<section id="simsummary" data-transition="fade" style="display:flex; flex-direction:column; gap:28px; padding:44px 86px 100px; background:#ffffff">
   <div style="display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">2. 시뮬레이션</p>
     <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">시나리오 결과</h2>
   </div>
   <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:0 28px">
@@ -682,7 +420,7 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
       <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">출입구 보행자 출현</p>
       <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">보행자가 나와 진로에 멈춤</p>
     </div>
-    <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#1d2630"><b>4 m 이상</b>에서 나타나면 충돌 0 %<br>출입구 앞 사전감속이면 <b>2 m 이상</b>이면 0 %</p>
+    <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#1d2630"><b>4 m 이상</b>에서 나타나면 충돌 0 %<br>사전 대비(0.8 m/s)면 <b>2 m 이상</b>이면 0 %</p>
     <p style="width:460px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">5 m에서 나와도 충돌</p>
   </div>
   <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
@@ -729,13 +467,271 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
     <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#1d2630">12 % 내리막에서 속도 자동 하향, 이격 유지<br>3 cm 턱 통과, <b>5 cm 이상</b>은 턱 앞 정지</p>
     <p style="width:460px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">모든 경사에서 충돌, 5 cm 턱 걸림</p>
   </div>
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">출현 거리 = 보행자·차량이 나타나는 순간 기기와의 거리 (가까울수록 위험) · 총 482회 시행 · 자세한 수치와 영상은 다음 장부터</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">17</p>
+  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">출현 거리 = 보행자·차량이 나타나는 순간 기기와의 거리 (가까울수록 위험) · 총 482회 시행 · 자세한 수치는 부록 21~24쪽</p>
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">14</p>
   <aside>결과를 한 장으로 모으면 이렇습니다. 출입구 보행자, 버스 진출, 후진 차량 세 경우 모두 시스템이 사람보다 짧은 거리에서 멈췄고, 특히 보행자가 진로에 멈추는 경우는 사람 조작이 5미터에서도 충돌인데 시스템은 4미터 이상에서 나타나면 충돌이 없었어요. 뒤차 접근은 길가로 붙어서 이격을 벌리긴 하지만 25킬로미터 뒤차는 라이다 12미터로는 시간이 부족했고요. 경사와 턱은 보정 기능이 있을 때와 없을 때 차이가 분명했습니다. 다음 장부터 하나씩 수치와 영상으로 볼게요.</aside>
 </section>
-<section id="sime2" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:36px">
+<section id="siminsight" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">5. 검증 · 시뮬레이션 결과</p>
+<p style="font-size:30px;font-weight:700;color:#3E5568">2. 시뮬레이션</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">설계 반영점 6가지</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">1</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">반응 지연을 정지 예산에 포함</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">0.2 s와 1.0 s의 차이가 충돌률 차이로 그대로 나타남</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">2</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">위험 지점 사전 대비 (피드포워드)</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">안전 출현거리 4 m → 2 m, 가려진 곳은 정지만으론 부족</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">3</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">측면 접근 차량 예측</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">담장·주차 줄 뒤 차량은 직전에야 보임 → 위치 기반 감속</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">4</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">후방 감지거리 확대</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">라이다 12 m는 18 km/h까지, 25 km/h 대응은 20 m 이상</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
+<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">5</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">경사·턱에 따른 속도 제한</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">12 % 내리막 1.29 m/s, 턱 3 cm 통과 · 5 cm 이상 정지</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;background:#F7F8FA;padding:26px 32px;border:2px solid #F7F8FA;border-radius:16px">
+<div style="width:72px;height:72px;background:#A9B8C6;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">6</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">시뮬레이션의 한계</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">치수는 가정값, 센서 열화 미반영 → 실측 후 재실행</p></div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#1D2630;padding:24px 36px;border:2px solid #1D2630;border-radius:16px">
+<p style="font-size:30px;font-weight:700;color:#1D2630;background:#F2B600;padding:4px 20px;border-radius:24px">결론</p>
+<p style="font-size:34px;line-height:1.4;color:#FFFFFF">"사람이 늦게 반응해도 기계가 먼저 멈춘다" — 다섯 시나리오 모두에서 확인</p>
+</div>
+<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">센서 위치·캐스터 지름 영향은 별도 민감도 실험 결과</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">15</p>
+<aside>결과를 설계로 옮기면 여섯 가지예요. 첫째, 정지거리 계산에 반응 지연 동안 가는 거리를 꼭 넣어야 해요. 둘째, 출입구와 주차장 앞에서는 미리 속도를 줄여야 하고요. 셋째, 옆에서 나오는 차는 보이고 나서 반응하면 늦기 때문에 지도에 위험 지점을 두고 예측해야 합니다. 넷째, 뒤쪽 라이다는 12미터로는 부족해서 20미터 이상이 필요하고요. 다섯째, 경사와 턱에 따라 속도를 자동으로 제한해야 합니다. 마지막으로 이번 시뮬레이션은 치수가 가정값이고 센서 열화도 반영이 안 됐기 때문에, 현장 치수를 재서 다시 돌려야 한다는 한계가 있어요. 그래도 기계가 먼저 멈춘다는 핵심은 다섯 시나리오 모두에서 확인됐습니다.</aside>
+</section>
+<section id="appendix" data-transition="fade" style="background:#1D2630;color:#FFFFFF;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:30px;font-weight:700;color:#F2B600">부록</p>
+<h2 style="font-size:88px;font-weight:700;line-height:1.15;color:#FFFFFF">Appendix</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;width:1400px">
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">17</p><p style="font-size:30px;color:#FFFFFF">사용 현황 · 니즈 (고령 보행 사고, 외출 불편)</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">18</p><p style="font-size:30px;color:#FFFFFF">정지거리 비교: 시스템 vs 사람</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">19</p><p style="font-size:30px;color:#FFFFFF">정지거리 가정치의 근거</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">20</p><p style="font-size:30px;color:#FFFFFF">구성과 설계 제약</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">21</p><p style="font-size:30px;color:#FFFFFF">E2 출입구 보행자 · 수치</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">22</p><p style="font-size:30px;color:#FFFFFF">E1 버스 진출 · E3 차량 후진 · 수치</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">23</p><p style="font-size:30px;color:#FFFFFF">E4 이면도로 뒤차 접근 · 수치</p></div>
+<div style="display:flex;align-items:center;gap:20px;background:#2a3542;padding:22px 32px;border-radius:14px"><p style="font-size:28px;font-weight:700;color:#F2B600;width:56px">24</p><p style="font-size:30px;color:#FFFFFF">E5 내리막 경사 · 보도 턱 · 수치</p></div>
+</div>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#D5DBE1;text-align:right">16</p>
+<aside>여기부터는 부록이에요. 질문이 나오면 해당 쪽을 펼쳐서 수치로 답하겠습니다.</aside>
+</section>
+<section id="problem" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#3E5568">부록</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">시니어 보행 사고와 이동 불편</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:31px;font-weight:700;color:#3E5568">문제 · 사고 현황</p>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">20.43%</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">서울 65세 이상 인구 비중 (2025)</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">67.0%</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">보행 사망자 중 65세 이상 (2024, 920명 중 616명)</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#3E5568">56.2%</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">고령 보행 사망 중 횡단 중 발생</p>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:31px;font-weight:700;color:#3E5568">니즈 · 이동 공백</p>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">56.6%</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">65세 이상 외출 불편 (2023, 10,078명)</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">약 15만</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">서울 70세 이상 면허 반납 누적 (2025년 한 해 32,095명)</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#F2F4F6;padding:28px 36px;border:2px solid #F2F4F6;border-radius:16px">
+<p style="font-size:84px;font-weight:700;line-height:1.1;color:#1D2630">35.5%</p>
+<p style="font-size:29px;line-height:1.4;color:#4A5560">전동보장구 이용자 사고 경험 (2016 조사)</p>
+</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#1D2630;padding:24px 36px;border-radius:16px">
+<p style="font-size:26px;font-weight:700;color:#1D2630;background:#F2B600;padding:6px 20px;border-radius:24px">정리</p>
+<p style="font-size:32px;font-weight:700;color:#F2B600">가장 급한 시니어부터, 누구나 안전하게 근거리를 이동하는 기기</p>
+</div>
+<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">행정안전부 2025 주민등록 · 한국교통안전공단 · 2023 노인실태조사 · 한국소비자원(2016)</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">17</p>
+<aside>처음엔 휠체어를 떠올렸는데, 알고 보니 문제는 탈것보다 타는 사람 쪽에 있었어요. 서울은 이미 초고령사회고, 보행 사망자 열 명 중 일곱 명 가까이가 65세 이상이에요. 그중 절반 넘게가 길을 건너다 사고를 당했고요. 게다가 시니어분들은 외출 자체가 불편하고, 면허를 반납하고 나면 걷기엔 멀고 대중교통 타기엔 애매한 거리를 채워 줄 수단이 없어요. 그래서 가장 급한 시니어부터 시작하되, 이동약자와 일반 사용자까지 누구나 가까운 거리를 안전하게 다닐 수 있는 기기로 방향을 잡았습니다. 전동보장구 사고 조사는 2016년 자료라 최신 자료로 보완이 필요해요.</aside>
+</section>
+<section id="stopping" data-transition="fade" style="display:flex; flex-direction:column; gap:56px; padding:44px 86px 100px; background:#ffffff">
+  <div style="display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">부록</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">정지거리 비교: 시스템 vs 사람</h2>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <p style="width:160px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">시스템</p>
+      <div style="width:520px; display:flex; flex-direction:column; padding:18px 28px; background:#f2b600; border-radius:12px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#1d2630">약 1.3m</p>
+      </div>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; color:#4a5560">반응 0.2초</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <p style="width:160px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">사람</p>
+      <div style="width:1040px; display:flex; flex-direction:column; padding:18px 28px; background:#1d2630; border-radius:12px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:44px; font-weight:700; color:#ffffff">약 2.6m</p>
+      </div>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; color:#4a5560">반응 1초</p>
+    </div>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; color:#4a5560">가정치: 6km/h(약 1.7m/s), 감속 1.5m/s²</p>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:32px">
+    <div style="display:flex; flex-direction:row; gap:28px; align-items:center; flex:1; padding:32px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+      <div style="width:72px; height:72px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">1</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; flex:1">
+        <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">줄일 수 있는 사고</h3>
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5560">기기가 접근하다 생기는 충돌&nbsp;<br>(사람 출현 · 차량 진출 · 뒤차 접근)</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:28px; align-items:center; flex:1; padding:32px; background:#f7f8fa; border:2px solid #f7f8fa; border-radius:16px">
+      <div style="width:72px; height:72px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#a9b8c6; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:36px; font-weight:700; color:#1d2630">2</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; flex:1">
+        <h3 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:40px; font-weight:700; color:#1d2630">한계와 대응</h3>
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5560">정지한 기기를 차량이 들이받는 경우:&nbsp;<br>경고 · 가장자리 이동으로 완화, 시뮬레이션 검증</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">직접 계산한 가정치 · 네 값을 정한 기준은 다음 장</p>
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">18</p>
+  <aside>6km/h로 가고 있을 때 시스템이 0.2초 만에 반응해서 1.5m/s²로 줄이면 약 1.3m 안에 멈춰요. 사람은 반응하는 데 1초쯤 걸린다고 보면 2.6m 정도가 필요하고요. 다만 이게 다 해결해 주는 건 아니에요. 기기가 먼저 위험 쪽으로 다가가다 생기는 사고는 줄일 수 있지만, 서 있는 기기를 차량이 들이받는 경우는 한계가 있어서 경고랑 가장자리 이동으로 줄이고 시뮬레이션으로 확인할 계획입니다. 이 숫자들은 가정치예요.</aside>
+</section>
+<section id="assumptions" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; padding:44px 86px 100px; background:#ffffff">
+  <div style="display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">부록</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">정지거리 가정치는 이렇게 정했다</h2>
+  </div>
+  <div style="display:grid; gap:28px; grid-template-columns:1fr 1fr">
+    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#3e5568">6 km/h</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">기기 최고속도</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">빠른 걸음 속도 · 식약처 기준의 경계 속도 ⑥</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#3e5568">0.2 s</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">시스템 반응 지연</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">카메라 1프레임 + 판단 + 제동 응답을 넉넉히 합친 값</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#1d2630">1.0 s</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">사람 반응 지연</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">실제 고령 운전자 1.3~2.3 s보다 빠르게 잡은 값 ①②③</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; padding:36px 40px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:80px; font-weight:700; line-height:1.1; color:#1d2630">1.5 m/s²</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#1d2630">감속도</p>
+      <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; color:#4a5560">대중교통 상용 제동의 상한 · 2.0부터는 승객이 못 견딤 ④⑤</p>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:22px 36px; background:#1d2630; border:2px solid #1d2630; border-radius:16px">
+    <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630; background:#f2b600; border-radius:24px">유의</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; line-height:1.4; color:#ffffff">네 값 모두 가정값 → 센서·기기 확정 후 실측해서 재검증</p>
+  </div>
+  <p style="position:absolute; top:973.94px; left:86px; width:1560px; height:98.04px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">정지거리 = v·τ + v²/2a&nbsp;<br>출처 ① FHWA 고령 운전자 반응시간 ② 국내 운전자 반응시간 ③ 고령자 돌발 반응 ④ 철도 가감속 범위 ⑤ 승객 허용 감속 ⑥ 식약처 동력보조장치 기준</p>
+  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">19</p>
+  <aside>앞 장의 숫자가 어디서 나왔는지 말씀드리면요. 속도 6킬로미터는 빠른 걸음 정도이고, 식약처 기준에서도 6킬로미터를 넘기면 별도 위험관리가 필요한 경계 속도예요. 시스템 반응 0.2초는 카메라 한 프레임, 인식과 판단, 모터가 제동을 거는 시간까지 넉넉하게 합친 값이고요. 사람 반응 1초는 국내 운전자 평균이 1.27초, 고령 운전자는 돌발 상황에서 1.3초에서 2.3초까지 측정된 걸 감안하면 오히려 사람 쪽에 유리하게 잡은 값이에요. 감속 1.5는 철도나 버스의 상용 제동이 0.7에서 1.5 사이이고 2.0부터는 대부분 승객이 견디기 어렵다는 연구를 참고해서 그 상한으로 잡았습니다. 네 값 모두 아직 가정이라서, 센서랑 기기가 정해지면 실측해서 같은 시나리오를 다시 돌릴 계획이에요.</aside>
+</section>
+<section id="tech" data-transition="fade" style="background:#ffffff">
+  <p id="e1-19hvl2p" style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">도로교통법 시행규칙 제2조(폭 1 m 이하) · 법적 분류는 기업과 협의 후 확정</p>
+  <p id="e2-19hvl2p" style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">20</p>
+  <div id="1479a9d2" style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">부록</p>
+    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">구성과 설계 제약</h2>
+  </div>
+  <div id="da138d55" style="position:absolute; top:775.81px; left:86px; width:1785.21px; height:106px; display:flex; flex-direction:row; gap:24px; align-items:center; padding:24px 36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+    <p style="padding:4px 20px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:24px">정리</p>
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; line-height:1.4; color:#1d2630">차체 폭 1 m 이하 고정이 6륜 차체 설계의 관건</p>
+  </div>
+  <div id="b0eaf17d" style="position:absolute; top:281.37px; left:86px; width:859px; height:396px; display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; font-weight:700; color:#3e5568">구성</p>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">1</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">구조</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">6바퀴, 좌우 구동륜(BLDC) + 앞뒤 캐스터</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">2</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">편의</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">좌석 평행이동·회전, 팔걸이 올림, 발판 접힘</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">3</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">인식</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">전방 Depth 카메라(차체 고정), 후방 라이다</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">4</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">제어</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">감지 → 판단 → 모터 제어 → 피드백</p>
+    </div>
+  </div>
+  <div id="27df1535" style="position:absolute; top:281.37px; left:976px; width:895.2px; height:396px; display:flex; flex-direction:column; gap:24px; padding:36px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:16px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:34px; font-weight:700; color:#3e5568">제약</p>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">1</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">차체 폭</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">1 m 이하 (보도 · 협소 공간 주행)</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">2</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">속도</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">최고 6 km/h, 보도 주행 전제</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#f2b600; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">3</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#1d2630">분류</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#1d2630">보도 주행 가능 분류 (기업과 협의)</p>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="width:44px; height:44px; display:flex; flex-direction:row; align-items:center; justify-content:center; background:#a9b8c6; border-radius:256px">
+        <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#1d2630">4</p>
+      </div>
+      <p style="width:130px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#4a5560">확인 필요</p>
+      <p style="flex:1; font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; line-height:1.4; white-space:nowrap; color:#4a5560">비장애 사용자 적용, 센서 유효거리, 무게중심</p>
+    </div>
+  </div>
+  <aside>구성부터 보면, 바퀴는 여섯 개고 좌우 구동륜을 BLDC 모터로 돌려요. 좌석은 옆으로 움직이고 회전해서 타고 내리기 편하게 했고요. 센서는 앞에 Depth 카메라, 뒤에 라이다를 쓰고, 감지하고 판단하고 모터를 제어한 뒤 결과를 다시 확인하는 구조예요. 제약은 차체 폭이 1미터 이하여야 한다는 거예요. 보도와 협소 공간에서 다니려면 폭이 좁아야 해서요. 법적 분류는 기업과 협의해서 정합니다. 다만 장애가 없는 일반 사용자한테도 이게 적용되는지, 센서가 실제로 얼마나 멀리 보는지는 더 확인해야 해요.</aside>
+</section>
+<section id="sime2" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:30px;font-weight:700;color:#3E5568">부록</p>
 <h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">E2 출입구 보행자 · 결과</h2>
 </div>
 <div style="display:flex;gap:32px">
@@ -757,34 +753,12 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
 </div>
 <img src="media/e2b_plot.png" alt="E2b 결과 그래프 4장: 출현 후 정지거리, 보행자와 최소 이격, 충돌률, 평균 충돌 속도를 사람 조작·시스템·사전감속 세 선으로 비교" style="width:1664px;height:420px;object-fit:contain;background:#FFFFFF;border-radius:12px">
 <p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">E2b 배치 108회 · 보행자 0.8 / 1.2 / 1.6 m/s, 출현 후 진로 위 정지 · 점당 6회 평균 · 출현 2~3 m는 반응만으로 부족, 출입구 앞 사전감속이 핵심</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">18</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">21</p>
 <aside>출입구 상황이에요. 보행자가 나와서 기기 진로에 멈추는 경우를 보면, 사람 조작은 5미터에서 나타나도 전부 부딪혔어요. 시스템은 4미터 이상에서 나타나면 충돌이 없었고요. 그리고 출입구에 다가갈 때 미리 0.8미터 속도로 줄여 두면 2미터에서 나타나도 멈춥니다. 아래 그래프에서 초록 선이 사전감속인데, 이격이 가장 크고 충돌 속도도 가장 낮아요. 기획서에서 계산했던 정지거리 1.3미터 대 2.6미터 차이가 그대로 결과로 나온 셈이고, 2~3미터 구간은 반응만으로는 안 되기 때문에 사전감속이 꼭 필요하다는 게 결론이에요.</aside>
 </section>
-<section id="sime2v" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생 · 클릭하면 멈춤/재생 · 녹화는 관찰 카메라 시점, 자막은 상태(경고·감속·정지)</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">19</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E2 출입구 보행자 · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238.54px; left:50%; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px; transform:translateX(-50%)">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">건물 출입구에서 보행자 출현 3 m · 보행자 1.2 m/s로 진로를 가로질러 지나감 · 기기 6 km/h</p>
-  </div>
-  <video src="media/e2_human.mp4" poster="media/e2_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 출입구 보행자 3 m 출현, 간신히 정지" style="position:absolute; top:389.98px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:701.98px; left:83.1px; width:275px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 (반응 1.0 s)</p>
-  <p style="position:absolute; top:757.98px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">간신히 정지, 보행자와 이격 0.10 m<br>정지거리 3.18 m</p>
-  <video src="media/e2_system.mp4" poster="media/e2_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 출입구 보행자 3 m 출현, 감속 후 통과" style="position:absolute; top:389.98px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:701.98px; left:648.1px; width:245px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 (반응 0.2 s)</p>
-  <p style="position:absolute; top:757.98px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">감속해 보행자를 보내고 통과<br>이격 0.44 m</p>
-  <video src="media/e2_preslow.mp4" poster="media/e2_preslow.jpg" muted loop playsinline preload="metadata" aria-label="시스템 + 사전감속: 출입구 앞 0.8 m/s로 접근, 여유 있게 통과" style="position:absolute; top:50%; left:1213.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px; transform:translateY(-50%);object-fit:cover"></video>
-  <p style="position:absolute; top:701.98px; left:1213.1px; width:309px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 + 출입구 사전감속</p>
-  <p style="position:absolute; top:757.98px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">여유 있게 통과, 이격 0.86 m<br>출입구 앞에서 0.8 m/s로 미리 감속</p>
-  <aside>같은 조건에서 세 가지 대응을 영상으로 보겠습니다. 왼쪽 사람 조작은 1초 늦게 반응해서 보행자 코앞 10센티미터에서 겨우 멈춥니다. 가운데 시스템은 0.2초 만에 감속을 시작해서 44센티미터 여유를 두고 보행자를 보내고 지나가요. 오른쪽은 출입구에 다가갈 때 미리 속도를 줄인 경우인데, 86센티미터로 가장 여유가 있습니다.</aside>
-</section>
-<section id="sime1e3" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
+<section id="sime1e3" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">5. 검증 · 시뮬레이션 결과</p>
+<p style="font-size:30px;font-weight:700;color:#3E5568">부록</p>
 <h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">E1 버스 진출 · E3 차량 후진 · 결과</h2>
 </div>
 <div style="display:flex;gap:32px">
@@ -814,56 +788,12 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
 </div>
 </div>
 <p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">E1 60회 · E3 60회, 출현 거리 5단계 × 상대 속도 3단계 × 2회 · 상대 차량은 기하학적 접촉 판정</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">20</p>
+<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">22</p>
 <aside>차량이 옆에서 나오는 두 상황이에요. 버스 진출은 시스템이 4미터 이상에서 나오면 충돌이 없었는데 사람 조작은 6미터에서도 3분의 2가 부딪혔어요. 버스가 느리게 나올 때 멈추지 않고 계속 가다 걸리는 거죠. 주차장 후진은 둘 다 더 어려웠어요. 주차된 차들이 시야를 가려서 1~2미터에서 나오면 시스템도 못 피하고, 6미터는 돼야 안전했습니다. 그래서 이 구간은 정지 기능만으로는 부족하고 미리 속도를 줄이고 경고음을 내는 쪽으로 가야 해요.</aside>
 </section>
-<section id="sime1v" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">21</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E1 버스 진출 · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">차고지 담장 틈 · 버스 3 m/s(11 km/h) 진출 · 기기 6 km/h · 왼쪽 둘은 출현 4 m, 오른쪽은 한계 조건 2 m</p>
-  </div>
-  <video src="media/e1_human.mp4" poster="media/e1_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 버스 4 m 출현, 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; width:265px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 · 출현 4 m</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 0.54 m/s<br>1초 지연 동안 1.7 m 진행</p>
-  <video src="media/e1_system.mp4" poster="media/e1_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 버스 4 m 출현, 정지 후 버스 통과 뒤 재출발" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 · 출현 4 m</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">정지 후 버스가 지나가면 재출발<br>이격 0.37 m</p>
-  <video src="media/e1_limit.mp4" poster="media/e1_limit.jpg" muted loop playsinline preload="metadata" aria-label="시스템 한계: 버스 2 m 출현, 충돌" style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 · 한계 조건 출현 2 m</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 0.69 m/s<br>2 m는 정지거리 1.3 m로도 부족</p>
-  <aside>버스 진출 영상입니다. 왼쪽은 사람 조작인데 버스가 4미터 앞에서 나와도 1초 지연 동안 1.7미터를 더 가 버려서 부딪힙니다. 가운데 시스템은 같은 조건에서 멈추고, 버스가 지나가면 다시 출발해요. 오른쪽은 한계를 보여 주려고 2미터에서 나오게 한 경우로, 시스템도 이건 못 피합니다. 그래서 담장 틈 같은 곳은 미리 감속하거나 측면 접근을 예측해야 합니다.</aside>
-</section>
-<section id="sime3v" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">22</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E3 차량 후진 · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">주차장 옆 보행로 · 차량 2 m/s(7 km/h) 후진 · 기기 6 km/h · 왼쪽 둘은 출현 3 m, 오른쪽은 한계 조건 1 m</p>
-  </div>
-  <video src="media/e3_human.mp4" poster="media/e3_human.jpg" muted loop playsinline preload="metadata" aria-label="사람 조작: 후진 차량 3 m 출현, 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; width:265px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">사람 조작 · 출현 3 m</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 1.19 m/s<br>거의 감속하지 못한 채 접촉</p>
-  <video src="media/e3_system.mp4" poster="media/e3_system.jpg" muted loop playsinline preload="metadata" aria-label="시스템: 후진 차량 3 m 출현, 정지 후 통과" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 · 출현 3 m</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">정지 후 차량이 지나가면 재출발<br>이격 0.40 m</p>
-  <video src="media/e3_limit.mp4" poster="media/e3_limit.jpg" muted loop playsinline preload="metadata" aria-label="시스템 한계: 후진 차량 1 m 출현, 충돌" style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 · 한계 조건 출현 1 m</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 1.67 m/s<br>감속을 시작하기도 전에 접촉</p>
-  <aside>주차장 후진 영상이에요. 사람 조작은 3미터에서 나온 차에 거의 그대로 부딪히고, 시스템은 멈춰서 차를 보냅니다. 오른쪽 1미터 출현은 시스템도 감속을 시작하기 전에 닿아 버려요. 주차 줄이 시야를 가리는 구간에서는 정지 기능만으로는 부족하고 미리 속도를 줄여야 한다는 걸 보여 줍니다.</aside>
-</section>
-<section id="sime4" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
+<section id="sime4" data-transition="fade" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">5. 검증 · 시뮬레이션 결과</p>
+<p style="font-size:30px;font-weight:700;color:#3E5568">부록</p>
 <h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">E4 이면도로 뒤차 접근 · 결과</h2>
 </div>
 <div style="display:flex;gap:32px">
@@ -914,36 +844,14 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
 <p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">23</p>
 <aside>보도 없는 이면도로에서 뒤차가 오는 상황이에요. 아무 반응도 안 하면 차가 5센티미터 옆으로 스쳐 지나가요. 시스템은 뒤쪽 라이다로 차를 보고 길가로 붙어서 멈추기 때문에 18킬로미터 뒤차 기준으로 이격이 39센티미터까지 벌어졌고, 사람 조작은 21센티미터에 한 번은 부딪혔어요. 다만 25킬로미터로 오는 차는 라이다 12미터로는 붙을 시간이 모자라서 시스템도 한 번 충돌했습니다. 그래서 후방 감지거리를 늘리고, 이면도로에 들어설 때 미리 속도를 줄이는 쪽으로 반영하려고 해요.</aside>
 </section>
-<section id="sime4v" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">24</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E4 이면도로 뒤차 접근 · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">폭 6 m 이면도로 · 뒤차 18 km/h, 감지 시 간격 10 m · 기기 6 km/h · 오른쪽은 한계 조건 25 km/h, 간격 6 m</p>
-  </div>
-  <video src="media/e4_none.mp4" poster="media/e4_none.jpg" muted loop playsinline preload="metadata" aria-label="무반응 기준: 그대로 직진, 뒤차가 5 cm 옆으로 스쳐 지나감" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">그대로 직진<br>뒤차가 0.05 m 옆으로 스침</p>
-  <video src="media/e4_system.mp4" poster="media/e4_system.jpg" muted loop playsinline preload="metadata" aria-label="후방 감지 시스템: 길가로 붙고 감속, 뒤차가 0.66 m 간격으로 추월" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">후방 감지 시스템</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">길가로 붙고 1.0 m/s로 감속<br>추월 간격 0.66 m, 최소 이격 0.45 m</p>
-  <video src="media/e4_limit.mp4" poster="media/e4_limit.jpg" muted loop playsinline preload="metadata" aria-label="시스템 한계: 뒤차 25 km/h, 간격 6 m에서 충돌" style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#ffffff; background:#1d2630; border-radius:20px">시스템 · 한계 조건 25 km/h</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 라이다 12 m로는 시간 부족<br>후방 감지거리 확대 필요</p>
-  <aside>뒤차 접근 영상입니다. 왼쪽은 아무 반응이 없는 기준인데 차가 5센티미터 옆으로 스쳐 지나가요. 가운데는 후방 라이다가 차를 보고 길가로 붙으면서 속도를 줄여서 66센티미터 간격으로 추월당합니다. 오른쪽은 25킬로미터로 오는 차를 6미터 간격에서 감지한 경우인데, 12미터 라이다로는 붙을 시간이 모자라서 부딪혀요. 그래서 후방 감지거리를 늘려야 한다는 결론이 나왔습니다.</aside>
-</section>
-<section id="sime5" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">E5a 48회 (경사 4단계 × 출현 4단계 × 3 프로필) · E5b 24회 + 속도 스윕 20회 · 캐스터 지름 18 cm, 마찰 0 구체로 단순화</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">25</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
+<section id="sime5" data-transition="fade" style="background:#ffffff">
+  <p id="e1-1cr5276" style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">E5a 48회 (경사 4단계 × 출현 4단계 × 3 프로필) · E5b 24회 + 속도 스윕 20회 · 캐스터 지름 18 cm, 마찰 0 구체로 단순화</p>
+  <p id="e2-1cr5276" style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">24</p>
+  <div id="557d238e" style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
+    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">부록</p>
     <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 내리막 경사 · 보도 턱 · 결과</h2>
   </div>
-  <div style="position:absolute; top:206px; left:86px; width:1748px; height:605px; display:flex; flex-direction:row; gap:32px">
+  <div id="ab465a19" style="position:absolute; top:206px; left:86px; width:1748px; height:605px; display:flex; flex-direction:row; gap:32px">
     <div style="display:flex; flex-direction:column; gap:16px; flex:1">
       <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:32px; font-weight:700; color:#3e5568">E5a · 내리막에서 보행자 출현 3.5 m, 보행자와 최소 이격</p>
       <table style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:27px; color:#1d2630">
@@ -973,151 +881,7 @@ table{border-collapse:collapse;width:100%}td,th{padding:.35em .6em;border-bottom
   </div>
   <aside>노면 조건이에요. 내리막에서는 같은 제동력으로도 멈출 수 있는 감속도가 줄어들어요. 12퍼센트 경사에서 보정이 없으면 시스템도 보행자와 부딪혔는데, IMU로 경사를 읽어서 속도를 1.29미터로 낮추면 평지와 같은 이격이 유지됐습니다. 사람 조작은 모든 경사에서 충돌이었고요. 턱은 깊이 카메라로 높이를 재서 3센티미터는 1미터 속도로 넘고, 5센티미터부터는 턱 앞에서 멈춥니다. 인식이 없으면 5센티미터와 8센티미터에 걸려요. 속도를 바꿔 봐도 5센티미터는 지금 캐스터로는 못 넘어서, 캐스터 지름을 키우거나 우회하는 쪽으로 설계를 봐야 합니다.</aside>
 </section>
-<section id="sime5sv" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">26</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 내리막 경사 · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 내리막 12 % · 보행자 출현 2.5 m · 기기 6 km/h · 제동 한계 2.0 m/s² 가정</p>
-  </div>
-  <video src="media/e5_slope_noc3.mp4" poster="media/e5_slope_noc3.jpg" muted loop playsinline preload="metadata" aria-label="경사 보정 없음: 내리막에서 충돌" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">시스템, 경사 보정 없음</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">충돌, 접촉 속도 1.13 m/s<br>가용 감속도 0.83 m/s²로는 부족</p>
-  <video src="media/e5_slope_c3.mp4" poster="media/e5_slope_c3.jpg" muted loop playsinline preload="metadata" aria-label="경사 보정: 속도를 미리 낮춰 정지" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; width:314px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 경사 보정 (IMU)</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">최고속도 1.29 m/s로 낮춰 정지<br>이격 0.22 m</p>
-  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">왜 차이가 나나</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">내리막에서는 중력 성분만큼 쓸 수 있는 감속도가 줄어든다. 12 %에서는 2.0 → 0.83 m/s². IMU로 경사를 읽어 정지 예산에 넣으면 속도를 미리 낮춘다</p>
-  </div>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">경사 보정 = 속도 자동 하향<br>평지와 같은 이격 유지</p>
-  <aside>내리막 영상입니다. 왼쪽은 경사를 모르는 시스템인데, 내리막에서는 같은 제동력으로도 줄일 수 있는 감속도가 작아져서 보행자와 부딪힙니다. 오른쪽은 IMU로 경사를 읽어서 최고속도를 1.29미터로 미리 낮춘 경우고, 22센티미터 여유를 두고 멈춰요.</aside>
-</section>
-<section id="sime5cv" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">27</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 보도 턱 3 cm · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 보도 턱 3 cm · 기기 6 km/h로 접근 · 캐스터 지름 18 cm</p>
-  </div>
-  <video src="media/e5_curb3_none.mp4" poster="media/e5_curb3_none.jpg" muted loop playsinline preload="metadata" aria-label="턱 3 cm, 무반응: 1.67 m/s 그대로 넘음" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">1.67 m/s 그대로 넘음<br>충격 큼</p>
-  <video src="media/e5_curb3_c1.mp4" poster="media/e5_curb3_c1.jpg" muted loop playsinline preload="metadata" aria-label="턱 3 cm, 턱 인식: 1.0 m/s로 감속해 통과" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 턱 인식</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">1.0 m/s로 감속해 통과<br>Depth 카메라로 턱 높이 측정</p>
-  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">턱 통과 속도 스윕</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">3 cm 턱은 0.6·0.8 m/s에서는 걸리고 1.0 m/s부터 넘는다. 그래서 3.5 cm 이하 턱은 1.0 m/s로 통과하도록 정했다</p>
-  </div>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">3 cm 통과 속도 = 1.0 m/s<br>더 느리면 걸리고, 전속력은 충격</p>
-  <aside>턱 3센티미터 영상입니다. 인식이 없으면 전속력으로 넘어가서 충격이 크고, 인식이 있으면 1미터 속도로 줄여서 넘어요. 속도를 바꿔 봤더니 0.6이나 0.8에서는 걸리고 1.0부터 넘어가서, 3.5센티미터 이하 턱은 1미터 속도로 통과하게 정했습니다.</aside>
-</section>
-<section id="sime5cv2" style="background:#ffffff">
-  <p style="position:absolute; top:1008px; left:86px; width:1560px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; color:#4a5560">발표 모드에서 자동 재생(반복) · 클릭하면 멈춤/재생 · 관찰 카메라 시점</p>
-  <p style="position:absolute; top:1008px; left:1718px; width:116px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; text-align:right; color:#4a5560">28</p>
-  <div style="position:absolute; top:44px; left:86px; width:1748px; height:122px; display:flex; flex-direction:column; gap:6px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:30px; font-weight:700; color:#3e5568">5. 검증 · 시뮬레이션 결과</p>
-    <h2 style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.15; color:#1d2630">E5 보도 턱 5 cm · 영상</h2>
-  </div>
-  <div style="position:absolute; top:238px; left:86px; width:1748px; height:81px; display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 28px; background:#f2f4f6; border:2px solid #f2f4f6; border-radius:14px">
-    <p style="padding:2px 16px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border:2px solid #f2b600; border-radius:20px">조건</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; color:#1d2630">시험 레인 보도 턱 5 cm · 기기 6 km/h로 접근 · 캐스터 지름 18 cm</p>
-  </div>
-  <video src="media/e5_curb5_none.mp4" poster="media/e5_curb5_none.jpg" muted loop playsinline preload="metadata" aria-label="턱 5 cm, 무반응: 턱에 걸림" style="position:absolute; top:390px; left:83.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:83.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#e4e8ec; border-radius:20px">무반응 (기준)</p>
-  <p style="position:absolute; top:758px; left:83.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#c0392b">턱에 걸려 멈춤<br>1.4 m/s까지 올려도 못 넘음</p>
-  <video src="media/e5_curb5_c1.mp4" poster="media/e5_curb5_c1.jpg" muted loop playsinline preload="metadata" aria-label="턱 5 cm, 턱 인식: 턱 앞 0.30 m 정지" style="position:absolute; top:390px; left:648.1px; width:533px; height:301px; border:2px solid #e3e6ea; border-radius:14px;object-fit:cover"></video>
-  <p style="position:absolute; top:702px; left:648.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">시스템 + 턱 인식</p>
-  <p style="position:absolute; top:758px; left:648.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">턱 앞 0.30 m에서 정지<br>우회 필요</p>
-  <div style="position:absolute; top:390px; left:1213.1px; width:533px; height:301px; display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#1d2630; border:2px solid #1d2630; border-radius:14px">
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; font-weight:700; color:#f2b600">설계 반영</p>
-    <p style="font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; line-height:1.45; color:#ffffff">캐스터 지름 18 cm로는 5 cm 턱을 넘지 못한다. 5 cm 이상은 정지 후 우회하거나, 캐스터 지름을 키우는 설계 검토가 필요하다</p>
-  </div>
-  <p style="position:absolute; top:702px; left:1213.1px; padding:4px 18px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:26px; font-weight:700; color:#1d2630; background:#fff4cc; border-radius:20px">정리</p>
-  <p style="position:absolute; top:758px; left:1213.1px; width:533px; font-family:'Noto Sans KR', Arial, sans-serif; font-size:28px; line-height:1.4; color:#1d2630">5 cm 이상 = 정지 후 우회<br>캐스터 지름 재검토</p>
-  <aside>턱 5센티미터 영상입니다. 인식이 없으면 걸려서 멈추고, 속도를 1.4까지 올려도 못 넘어요. 인식이 있으면 턱 앞 30센티미터에서 멈춥니다. 5센티미터부터는 지금 캐스터로는 못 넘기 때문에 정지하고 우회하거나 캐스터를 키우는 쪽으로 설계를 봐야 해요.</aside>
-</section>
-<section id="siminsight" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">5. 검증 · 시뮬레이션 결과</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">설계 반영점 6가지</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">1</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">반응 지연을 정지 예산에 포함</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">0.2 s와 1.0 s의 차이가 충돌률 차이로 그대로 나타남</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">2</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">출입구·주차장 앞 사전감속</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">안전 출현거리 4 m → 2 m, 가려진 곳은 정지만으론 부족</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">3</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">측면 접근 차량 예측</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">담장·주차 줄 뒤 차량은 직전에야 보임 → 위치 기반 감속</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">4</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">후방 감지거리 확대</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">라이다 12 m는 18 km/h까지, 25 km/h 대응은 20 m 이상</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:28px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:72px;height:72px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">5</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">경사·턱에 따른 속도 제한</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">12 % 내리막 1.29 m/s, 턱 3 cm 통과 · 5 cm 이상 정지</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:28px;background:#F7F8FA;padding:26px 32px;border:2px solid #F7F8FA;border-radius:16px">
-<div style="width:72px;height:72px;background:#A9B8C6;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:34px;font-weight:700;color:#1D2630">6</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:40px;font-weight:700;color:#1D2630">시뮬레이션의 한계</h3><p style="font-size:30px;line-height:1.4;color:#4A5560">치수는 가정값, 센서 열화 미반영 → 실측 후 재실행</p></div>
-</div>
-</div>
-<div style="display:flex;align-items:center;gap:24px;background:#1D2630;padding:24px 36px;border:2px solid #1D2630;border-radius:16px">
-<p style="font-size:30px;font-weight:700;color:#1D2630;background:#F2B600;padding:4px 20px;border-radius:24px">결론</p>
-<p style="font-size:34px;line-height:1.4;color:#FFFFFF">"사람이 늦게 반응해도 기계가 먼저 멈춘다" — 다섯 시나리오 모두에서 확인</p>
-</div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">센서 위치·캐스터 지름 영향은 별도 민감도 실험 결과</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">29</p>
-<aside>결과를 설계로 옮기면 여섯 가지예요. 첫째, 정지거리 계산에 반응 지연 동안 가는 거리를 꼭 넣어야 해요. 둘째, 출입구와 주차장 앞에서는 미리 속도를 줄여야 하고요. 셋째, 옆에서 나오는 차는 보이고 나서 반응하면 늦기 때문에 지도에 위험 지점을 두고 예측해야 합니다. 넷째, 뒤쪽 라이다는 12미터로는 부족해서 20미터 이상이 필요하고요. 다섯째, 경사와 턱에 따라 속도를 자동으로 제한해야 합니다. 마지막으로 이번 시뮬레이션은 치수가 가정값이고 센서 열화도 반영이 안 됐기 때문에, 현장 치수를 재서 다시 돌려야 한다는 한계가 있어요. 그래도 기계가 먼저 멈춘다는 핵심은 다섯 시나리오 모두에서 확인됐습니다.</aside>
-</section>
-<section id="next" style="background:#FFFFFF;color:#1D2630;font-family:'Noto Sans KR', Arial, sans-serif;padding:44px 86px 100px;display:flex;flex-direction:column;gap:44px">
-<div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:30px;font-weight:700;color:#3E5568">5. 검증</p>
-<h2 style="font-size:64px;font-weight:700;line-height:1.15;color:#1D2630">차별점과 검증 계획</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
-<div style="display:flex;align-items:center;gap:36px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">1</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:44px;font-weight:700;color:#1D2630">차별점</h3><p style="font-size:34px;line-height:1.4;color:#4A5560">실내 시설용이 아닌 실외 보도·골목, 좌석 평행이동·회전, 개인 일상 이동</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:36px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">2</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:44px;font-weight:700;color:#1D2630">모터 제어 실습</h3><p style="font-size:34px;line-height:1.4;color:#4A5560">BD60 BLDC 전기 파라미터 실측 완료, 안정 회전은 진행 중</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:36px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">3</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:44px;font-weight:700;color:#1D2630">가상환경 시뮬레이션</h3><p style="font-size:34px;line-height:1.4;color:#4A5560">가상 시가지에서 E1~E5 재현 완료 (482회, 영상 18편). Gazebo + ROS 2로 검증</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:36px;background:#F2F4F6;padding:26px 32px;border:2px solid #F2F4F6;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">4</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:44px;font-weight:700;color:#1D2630">결과물</h3><p style="font-size:34px;line-height:1.4;color:#4A5560">시뮬레이션 대 계산 정지거리 비교, 3D 모델 (폭 1m 이하)</p></div>
-</div>
-<div style="grid-column:span 2;display:flex;align-items:center;gap:36px;background:#1D2630;padding:26px 32px;border:2px solid #1D2630;border-radius:16px">
-<div style="width:80px;height:80px;background:#F2B600;border-radius:50%;display:flex;align-items:center;justify-content:center"><p style="font-size:36px;font-weight:700;color:#1D2630">5</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:44px;font-weight:700;color:#FFFFFF">다음 단계</h3><p style="font-size:34px;line-height:1.4;color:#D5DBE1">시뮬레이션 결과를 바탕으로 기업체 미팅에서 프로젝트 구체화</p></div>
-</div>
-</div>
-<p style="position:absolute;left:86px;top:1008px;width:1560px;font-size:26px;color:#4A5560">1: WHILL · 누리고 · 제로원 대비 · 2~4: 이번 발표 범위(가상 시가지) · 5: 다음 단계</p>
-<p style="position:absolute;left:1718px;top:1008px;width:116px;font-size:26px;color:#4A5560;text-align:right">30</p>
-<aside>자율주행 휠체어는 이미 나와 있지만 대부분 공항이나 병원처럼 통제된 실내용이에요. 저희는 실외 골목과 보도, 좌석 평행이동과 회전, 개인이 일상에서 쓰는 이동수단이라는 점이 달라요. 이번 학기에는 두 가지를 해요. 하나는 BLDC 모터 제어 실습인데, 전기 파라미터 측정은 끝났고 안정 회전과 정지 제어는 진행 중이에요. 다른 하나는 가상 시가지에서 다섯 시나리오를 재현한 시뮬레이션이고, 앞에서 보신 것처럼 482회 시행과 영상 18편까지 끝났어요. 제어 로직은 Gazebo와 ROS 2로 만들고 검증했습니다. 결과물은 시뮬레이션과 계산 정지거리 비교, 그리고 3D 모델이에요. 이 결과를 바탕으로 다음에는 기업체와 미팅해서 프로젝트를 구체화할 계획입니다. 들어주셔서 감사합니다.</aside>
-</section>
+
 </div>
 <div id="hud"></div><div id="notes"></div><div id="help">← → 이동 · F 전체화면 · N 발표자 노트 · 클릭 다음</div>
 <script>
